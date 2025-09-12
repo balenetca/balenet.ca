@@ -141,7 +141,7 @@ export function Contact() {
               <Card className="bg-card border-border">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-4">
-                    <MapPin className="h-8 w-8 text-primary" />
+                    <Clock className="h-8 w-8 text-primary" />
                     <div>
                       <h4 className="font-semibold text-foreground">{t("contact.info.hours")}</h4>
                       <p className="text-muted-foreground">{t("contact.info.hoursValue")}</p>
