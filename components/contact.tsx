@@ -29,15 +29,26 @@ export function Contact() {
     e.preventDefault()
     
     try {
-      const response = await fetch('/api/send-email', {
+      const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          access_key: '0bef34c2-5b63-4a13-bf2c-84a499b71a4b',
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+          subject: `New Message from BALE•NET Website - Quote Request from ${formData.name}`,
+          from_name: 'BALE•NET Website',
+          replyto: formData.email,
+        }),
       })
 
-      if (response.ok) {
+      const result = await response.json()
+
+      if (result.success) {
         // Reset form on success
         setFormData({
           name: "",
@@ -47,7 +58,7 @@ export function Contact() {
         })
         alert(t("contact.form.success") || "Thank you! Your message has been sent successfully.")
       } else {
-        throw new Error('Failed to send email')
+        throw new Error(result.message || 'Failed to send email')
       }
     } catch (error) {
       console.error('Error sending email:', error)
