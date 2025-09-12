@@ -9,8 +9,8 @@ import { Footer } from "@/components/footer"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "BALE•NET - Professional Construction Cleaning & Debris Removal Services | Ottawa, Gatineau, Carleton | Free Quotes Available 24/7",
-  description: "Professional construction cleaning and debris removal services in Ottawa, Gatineau, Carleton, Hull, Aylmer, Orleans, Kanata, Nepean, Gloucester, Ottawa South, Barrhaven, and Stittsville. Post-construction cleanup, demolition services, and disaster recovery cleaning. Free quotes available 24/7.",
+  title: "BALE•NET - Professional Construction Cleaning Services | Ottawa, Gatineau",
+  description: "Professional construction cleaning and debris removal services in Ottawa, Gatineau, Carleton, Hull, Aylmer, Orleans, Kanata, Nepean, Gloucester, Ottawa South, Barrhaven, and Stittsville. Free quotes available 24/7.",
   keywords: [
     "construction cleaning Ottawa",
     "post construction cleanup Gatineau",
