@@ -228,15 +228,18 @@ export default function RootLayout({
         
         {/* Favicon and App Icons */}
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="57x57" href="/icons/apple-touch-icon-57x57.png" />
+        <link rel="icon" type="image/png" sizes="72x72" href="/icons/apple-touch-icon-72x72.png" />
+        <link rel="icon" type="image/png" sizes="76x76" href="/icons/apple-touch-icon-76x76.png" />
+        <link rel="icon" type="image/png" sizes="114x114" href="/icons/apple-touch-icon-114x114.png" />
+        <link rel="icon" type="image/png" sizes="120x120" href="/icons/apple-touch-icon-120x120.png" />
+        <link rel="icon" type="image/png" sizes="144x144" href="/icons/apple-touch-icon-144x144.png" />
+        <link rel="icon" type="image/png" sizes="152x152" href="/icons/apple-touch-icon-152x152.png" />
         <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="192x192" href="/icons/android-chrome-192x192.png" />
-        <link rel="icon" type="image/png" sizes="512x512" href="/icons/android-chrome-512x512.png" />
+        <link rel="icon" type="image/png" sizes="512x512" href="/icons/balenet-logo-512x512.png" />
         <meta name="msapplication-TileColor" content="#ff6b35" />
-        <meta name="msapplication-TileImage" content="/icons/mstile-150x150.png" />
+        <meta name="msapplication-TileImage" content="/icons/apple-touch-icon-144x144.png" />
         <meta name="msapplication-config" content="/icons/browserconfig.xml" />
-        <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#ff6b35" />
         
         {/* Theme Colors */}
         <meta name="theme-color" content="#ff6b35" />
