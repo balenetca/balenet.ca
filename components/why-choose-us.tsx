@@ -1,5 +1,6 @@
 "use client"
 
+import React from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Users, Award, Clock, Sparkles, DollarSign } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
@@ -47,15 +48,42 @@ export function WhyChooseUs() {
 
         <div className="flex justify-center">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl">
-            {features.map((feature, index) => (
-              <Card key={index} className="bg-card border-border hover:shadow-lg transition-shadow">
-                <CardContent className="p-6 text-center">
-                  <feature.icon className="h-12 w-12 text-primary mx-auto mb-4" />
-                  <h3 className="text-xl font-semibold text-foreground mb-2">{feature.title}</h3>
-                  <p className="text-muted-foreground text-pretty">{feature.description}</p>
-                </CardContent>
-              </Card>
-            ))}
+            {features.map((feature, index) => {
+              // For the last two cards (index 3 and 4), wrap them in a centered container
+              if (index === 3) {
+                return (
+                  <div key="centered-cards" className="lg:col-span-3 lg:flex lg:justify-center lg:gap-6">
+                    <Card className="bg-card border-border hover:shadow-lg transition-shadow lg:w-80">
+                      <CardContent className="p-6 text-center">
+                        {React.createElement(features[index].icon, { className: "h-12 w-12 text-primary mx-auto mb-4" })}
+                        <h3 className="text-xl font-semibold text-foreground mb-2">{features[index].title}</h3>
+                        <p className="text-muted-foreground text-pretty">{features[index].description}</p>
+                      </CardContent>
+                    </Card>
+                    <Card className="bg-card border-border hover:shadow-lg transition-shadow lg:w-80">
+                      <CardContent className="p-6 text-center">
+                        {React.createElement(features[index + 1].icon, { className: "h-12 w-12 text-primary mx-auto mb-4" })}
+                        <h3 className="text-xl font-semibold text-foreground mb-2">{features[index + 1].title}</h3>
+                        <p className="text-muted-foreground text-pretty">{features[index + 1].description}</p>
+                      </CardContent>
+                    </Card>
+                  </div>
+                )
+              }
+              // Skip the last card since it's handled above
+              if (index === 4) return null
+              
+              // Render the first three cards normally
+              return (
+                <Card key={index} className="bg-card border-border hover:shadow-lg transition-shadow">
+                  <CardContent className="p-6 text-center">
+                    <feature.icon className="h-12 w-12 text-primary mx-auto mb-4" />
+                    <h3 className="text-xl font-semibold text-foreground mb-2">{feature.title}</h3>
+                    <p className="text-muted-foreground text-pretty">{feature.description}</p>
+                  </CardContent>
+                </Card>
+              )
+            })}
           </div>
         </div>
       </div>
