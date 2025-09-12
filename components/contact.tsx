@@ -6,9 +6,42 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Phone, Mail, MapPin } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
+import { useState } from "react"
 
 export function Contact() {
   const { t } = useLanguage()
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: ""
+  })
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }))
+  }
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    
+    // Create mailto link with form data
+    const subject = encodeURIComponent(`Quote Request from ${formData.name}`)
+    const body = encodeURIComponent(`
+Name: ${formData.name}
+Email: ${formData.email}
+Phone: ${formData.phone}
+
+Message:
+${formData.message}
+    `)
+    
+    const mailtoLink = `mailto:info@balenet.com?subject=${subject}&body=${body}`
+    window.location.href = mailtoLink
+  }
 
   return (
     <section id="contact" className="py-20 bg-background">
@@ -23,14 +56,42 @@ export function Contact() {
             <h3 className="text-2xl font-semibold text-foreground mb-6">{t("contact.form.title")}</h3>
             <Card className="bg-card border-border flex-1">
               <CardContent className="p-6 flex flex-col h-full">
-                <form className="space-y-4 flex-1 flex flex-col">
+                <form onSubmit={handleSubmit} className="space-y-4 flex-1 flex flex-col">
                   <div className="grid md:grid-cols-2 gap-4">
-                    <Input placeholder={t("contact.form.name")} className="bg-input border-border" />
-                    <Input placeholder={t("contact.form.phone")} className="bg-input border-border" />
+                    <Input 
+                      name="name"
+                      value={formData.name}
+                      onChange={handleInputChange}
+                      placeholder={t("contact.form.name")} 
+                      className="bg-input border-border" 
+                      required 
+                    />
+                    <Input 
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleInputChange}
+                      placeholder={t("contact.form.phone")} 
+                      className="bg-input border-border" 
+                    />
                   </div>
-                  <Input placeholder={t("contact.form.email")} className="bg-input border-border" />
-                  <Textarea placeholder={t("contact.form.message")} className="bg-input border-border flex-1 min-h-[120px]" />
-                  <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 mt-auto">
+                  <Input 
+                    name="email"
+                    type="email"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    placeholder={t("contact.form.email")} 
+                    className="bg-input border-border" 
+                    required 
+                  />
+                  <Textarea 
+                    name="message"
+                    value={formData.message}
+                    onChange={handleInputChange}
+                    placeholder={t("contact.form.message")} 
+                    className="bg-input border-border flex-1 min-h-[120px]" 
+                    required 
+                  />
+                  <Button type="submit" className="w-full bg-primary text-primary-foreground hover:bg-primary/90 mt-auto">
                     {t("contact.form.submit")}
                   </Button>
                 </form>

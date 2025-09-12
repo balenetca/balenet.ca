@@ -54,7 +54,7 @@ export function Header() {
             <button
               onClick={() => setLanguage("en")}
               className={`px-3 py-1 text-sm font-medium rounded transition-colors ${
-                language === "en" ? "bg-orange-500 text-white" : "text-gray-600 hover:text-orange-500"
+                language === "en" ? "bg-primary text-primary-foreground" : "text-gray-600 hover:text-primary"
               }`}
             >
               EN
@@ -62,7 +62,7 @@ export function Header() {
             <button
               onClick={() => setLanguage("fr")}
               className={`px-3 py-1 text-sm font-medium rounded transition-colors ${
-                language === "fr" ? "bg-orange-500 text-white" : "text-gray-600 hover:text-orange-500"
+                language === "fr" ? "bg-primary text-primary-foreground" : "text-gray-600 hover:text-primary"
               }`}
             >
               FR
@@ -71,7 +71,7 @@ export function Header() {
 
           <Button
             onClick={() => scrollToSection("contact")}
-            className="bg-orange-500 text-white hover:bg-orange-600 font-semibold px-6 py-2"
+            className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold px-6 py-2"
           >
             {t("nav.getQuote")}
           </Button>
