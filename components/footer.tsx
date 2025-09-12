@@ -10,7 +10,7 @@ export function Footer() {
     <footer className="bg-muted border-t border-border py-12">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8">
-          <div className="md:col-span-2">
+          <div>
             <div className="flex items-center gap-2 mb-4">
               <Sparkles className="h-6 w-6 text-primary" />
               <span className="text-xl font-bold text-foreground">BALE•NET</span>
@@ -49,16 +49,24 @@ export function Footer() {
             <h4 className="font-semibold text-foreground mb-4">{t("footer.services.title")}</h4>
             <ul className="space-y-2">
               <li>
-                <span className="text-muted-foreground">{t("services.postConstruction.title")}</span>
+                <a href="#services" className="text-muted-foreground hover:text-primary transition-colors">
+                  {t("services.postConstruction.title")}
+                </a>
               </li>
               <li>
-                <span className="text-muted-foreground">{t("services.debrisRemoval.title")}</span>
+                <a href="#services" className="text-muted-foreground hover:text-primary transition-colors">
+                  {t("services.debrisRemoval.title")}
+                </a>
               </li>
               <li>
-                <span className="text-muted-foreground">{t("services.deepCleaning.title")}</span>
+                <a href="#services" className="text-muted-foreground hover:text-primary transition-colors">
+                  {t("services.deepCleaning.title")}
+                </a>
               </li>
               <li>
-                <span className="text-muted-foreground">{t("services.finalCleaning.title")}</span>
+                <a href="#services" className="text-muted-foreground hover:text-primary transition-colors">
+                  {t("services.demolition.title")}
+                </a>
               </li>
             </ul>
           </div>

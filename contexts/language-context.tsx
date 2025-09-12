@@ -70,7 +70,7 @@ const translations = {
     "services.postConstruction.bullet5": "Final inspection & touch-ups",
     "services.debrisRemoval.title": "Debris Removal",
     "services.debrisRemoval.description":
-      "Safe and efficient removal of construction waste, materials, and debris from your job site.",
+      "Safe and efficient removal of construction waste, materials, and debris from your job site. We provide comprehensive debris management solutions to keep your construction area clean and organized throughout your project.",
     "services.debrisRemoval.bullet1": "On-site debris & waste removal",
     "services.debrisRemoval.bullet2": "Dumpster rental & placement",
     "services.debrisRemoval.bullet3": "Hazardous material disposal",
@@ -78,7 +78,7 @@ const translations = {
     "services.debrisRemoval.bullet5": "Site cleanup & organization",
     "services.deepCleaning.title": "Deep Cleaning",
     "services.deepCleaning.description":
-      "Thorough cleaning of all surfaces, fixtures, and areas to ensure a spotless finish.",
+      "Thorough cleaning of all surfaces, fixtures, and areas to ensure a spotless finish. Our comprehensive deep cleaning process eliminates hidden dirt, dust, and debris that standard cleaning methods often miss.",
     "services.deepCleaning.bullet1": "Full surface wipe-down & sanitization",
     "services.deepCleaning.bullet2": "HVAC system cleaning & filter replacement",
     "services.deepCleaning.bullet3": "Bathroom & kitchen deep cleaning",
@@ -86,7 +86,7 @@ const translations = {
     "services.deepCleaning.bullet5": "Light fixture & ceiling fan cleaning",
     "services.finalCleaning.title": "Final Cleaning",
     "services.finalCleaning.description":
-      "The finishing touch that makes your space move-in ready with attention to every detail.",
+      "The finishing touch that makes your space move-in ready with attention to every detail. This comprehensive final cleaning service ensures your newly constructed or renovated space is pristine and ready for occupancy or sale.",
     "services.disasterRecovery.title": "Disaster Recovery Cleaning",
     "services.disasterRecovery.description":
       "When the unexpected happens: fire, flood, storm, or other emergencies, BALE•NET provides rapid disaster recovery cleaning focused on safety, speed, and detail.",
@@ -97,7 +97,7 @@ const translations = {
     "services.disasterRecovery.bullet5": "Odor removal & air purification",
     "services.demolition.title": "Demolition Services",
     "services.demolition.description":
-      "Professional demolition and site preparation services for residential and commercial projects.",
+      "Professional demolition and site preparation services for residential and commercial projects. Our experienced team handles safe structural removal, site clearing, and preparation for new construction with proper waste disposal and environmental compliance.",
     "services.demolition.bullet1": "Interior & exterior demolition",
     "services.demolition.bullet2": "Selective structural removal",
     "services.demolition.bullet3": "Site preparation & clearing",
@@ -154,6 +154,7 @@ const translations = {
     // Contact
     "contact.title": "Get Your Free Quote Today",
     "contact.subtitle": "Ready to clean up your construction site? Contact us for a free, no-obligation quote.",
+    "contact.form.title": "Get Your Free Quote",
     "contact.form.name": "Full Name",
     "contact.form.email": "Email Address",
     "contact.form.phone": "Phone Number",
@@ -230,7 +231,7 @@ const translations = {
     "services.postConstruction.bullet5": "Inspection finale et retouches",
     "services.debrisRemoval.title": "Enlèvement de débris",
     "services.debrisRemoval.description":
-      "Enlèvement sécuritaire et efficace des déchets de construction, matériaux et débris de votre chantier.",
+      "Enlèvement sécuritaire et efficace des déchets de construction, matériaux et débris de votre chantier. Nous offrons des solutions complètes de gestion des débris pour maintenir votre zone de construction propre et organisée tout au long de votre projet.",
     "services.debrisRemoval.bullet1": "Enlèvement de débris et déchets sur site",
     "services.debrisRemoval.bullet2": "Location et placement de bennes",
     "services.debrisRemoval.bullet3": "Élimination de matières dangereuses",
@@ -238,7 +239,7 @@ const translations = {
     "services.debrisRemoval.bullet5": "Nettoyage et organisation du site",
     "services.deepCleaning.title": "Nettoyage en profondeur",
     "services.deepCleaning.description":
-      "Nettoyage minutieux de toutes les surfaces, installations et zones pour assurer une finition impeccable.",
+      "Nettoyage minutieux de toutes les surfaces, installations et zones pour assurer une finition impeccable. Notre processus de nettoyage en profondeur élimine la saleté cachée, la poussière et les débris que les méthodes de nettoyage standard manquent souvent.",
     "services.deepCleaning.bullet1": "Essuyage complet et désinfection des surfaces",
     "services.deepCleaning.bullet2": "Nettoyage système CVC et remplacement filtres",
     "services.deepCleaning.bullet3": "Nettoyage en profondeur salles de bain et cuisine",
@@ -246,7 +247,7 @@ const translations = {
     "services.deepCleaning.bullet5": "Nettoyage luminaires et ventilateurs de plafond",
     "services.finalCleaning.title": "Nettoyage final",
     "services.finalCleaning.description":
-      "La touche finale qui rend votre espace prêt à emménager avec attention à chaque détail.",
+      "La touche finale qui rend votre espace prêt à emménager avec attention à chaque détail. Ce service de nettoyage final complet assure que votre espace nouvellement construit ou rénové est impeccable et prêt pour l'occupation ou la vente.",
     "services.disasterRecovery.title": "Nettoyage de récupération après sinistre",
     "services.disasterRecovery.description":
       "Quand l'inattendu arrive: incendie, inondation, tempête ou autres urgences, BALE•NET fournit un nettoyage de récupération rapide axé sur la sécurité, la rapidité et les détails.",
@@ -257,7 +258,7 @@ const translations = {
     "services.disasterRecovery.bullet5": "Élimination d'odeurs et purification d'air",
     "services.demolition.title": "Services de démolition",
     "services.demolition.description":
-      "Services professionnels de démolition et préparation de site pour projets résidentiels et commerciaux.",
+      "Services professionnels de démolition et préparation de site pour projets résidentiels et commerciaux. Notre équipe expérimentée gère l'enlèvement structurel sécuritaire, le déblaiement de site et la préparation pour nouvelle construction avec élimination appropriée des déchets et conformité environnementale.",
     "services.demolition.bullet1": "Démolition intérieure et extérieure",
     "services.demolition.bullet2": "Enlèvement structurel sélectif",
     "services.demolition.bullet3": "Préparation et déblaiement de site",
@@ -316,6 +317,7 @@ const translations = {
     "contact.title": "Obtenez votre devis gratuit aujourd'hui",
     "contact.subtitle":
       "Prêt à nettoyer votre chantier de construction? Contactez-nous pour un devis gratuit et sans obligation.",
+    "contact.form.title": "Obtenez votre devis gratuit",
     "contact.form.name": "Nom complet",
     "contact.form.email": "Adresse courriel",
     "contact.form.phone": "Numéro de téléphone",

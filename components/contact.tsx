@@ -19,18 +19,18 @@ export function Contact() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          <div>
-            <h3 className="text-2xl font-semibold text-foreground mb-6">{t("contact.form.submit")}</h3>
-            <Card className="bg-card border-border">
-              <CardContent className="p-6">
-                <form className="space-y-4">
+          <div className="flex flex-col">
+            <h3 className="text-2xl font-semibold text-foreground mb-6">{t("contact.form.title")}</h3>
+            <Card className="bg-card border-border flex-1">
+              <CardContent className="p-6 flex flex-col h-full">
+                <form className="space-y-4 flex-1 flex flex-col">
                   <div className="grid md:grid-cols-2 gap-4">
                     <Input placeholder={t("contact.form.name")} className="bg-input border-border" />
                     <Input placeholder={t("contact.form.phone")} className="bg-input border-border" />
                   </div>
                   <Input placeholder={t("contact.form.email")} className="bg-input border-border" />
-                  <Textarea placeholder={t("contact.form.message")} className="bg-input border-border min-h-[120px]" />
-                  <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
+                  <Textarea placeholder={t("contact.form.message")} className="bg-input border-border flex-1 min-h-[120px]" />
+                  <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 mt-auto">
                     {t("contact.form.submit")}
                   </Button>
                 </form>
@@ -38,9 +38,9 @@ export function Contact() {
             </Card>
           </div>
 
-          <div>
+          <div className="flex flex-col">
             <h3 className="text-2xl font-semibold text-foreground mb-6">{t("contact.info.title")}</h3>
-            <div className="space-y-6">
+            <div className="space-y-4 flex-1">
               <Card className="bg-card border-border">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-4">
