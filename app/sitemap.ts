@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next'
 
+// Sitemap for BALE•NET construction cleaning services
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.balenet.ca'
   const lastModified = new Date()
