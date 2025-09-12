@@ -54,6 +54,8 @@ const translations = {
     "about.values.detail.description": "From drywall dust to sparkling glass",
     "about.coverage.title": "Service Coverage",
     "about.coverage.description": "We proudly serve Ottawa, Gatineau, Carleton, Hull, Aylmer, Orleans, Kanata, Nepean, Gloucester, Ottawa South, Barrhaven, Stittsville, and surrounding areas with reliable, professional construction cleaning services. Our local expertise ensures timely response and comprehensive coverage throughout the National Capital Region.",
+    "about.serviceAreas.title": "Service Areas",
+    "about.serviceAreas.description": "Ottawa, Gatineau, Carleton, Hull, Aylmer, Orleans, Kanata, Nepean, Gloucester, Ottawa South, Barrhaven, Stittsville",
 
     // Services
     "services.title": "Our Services",
@@ -168,6 +170,8 @@ const translations = {
     "contact.info.email": "Email",
     "contact.info.hours": "Business Hours",
     "contact.info.hoursValue": "Monday - Friday: 7:00 AM - 6:00 PM",
+    "contact.info.location": "Location",
+    "contact.info.locationValue": "Ottawa - Gatineau",
 
     // Breadcrumb
     "breadcrumb.home": "Home",
@@ -220,6 +224,8 @@ const translations = {
     "about.values.detail.description": "De la poussière de cloison sèche au verre étincelant",
     "about.coverage.title": "Couverture de service",
     "about.coverage.description": "Nous servons fièrement Ottawa, Gatineau, Carleton, Hull, Aylmer, Orleans, Kanata, Nepean, Gloucester, Ottawa South, Barrhaven, Stittsville et les environs avec des services de nettoyage de construction fiables et professionnels. Notre expertise locale garantit une réponse rapide et une couverture complète dans la région de la capitale nationale.",
+    "about.serviceAreas.title": "Zones de service",
+    "about.serviceAreas.description": "Ottawa, Gatineau, Carleton, Hull, Aylmer, Orleans, Kanata, Nepean, Gloucester, Ottawa South, Barrhaven, Stittsville",
 
     // Services
     "services.title": "Nos Services",
@@ -336,6 +342,8 @@ const translations = {
     "contact.info.email": "Courriel",
     "contact.info.hours": "Heures d'ouverture",
     "contact.info.hoursValue": "Lundi - Vendredi: 7h00 - 18h00",
+    "contact.info.location": "Emplacement",
+    "contact.info.locationValue": "Ottawa - Gatineau",
 
     // Breadcrumb
     "breadcrumb.home": "Accueil",

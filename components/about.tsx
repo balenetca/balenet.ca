@@ -41,6 +41,18 @@ export function About() {
             </CardContent>
           </Card>
         </div>
+
+        {/* Service Areas Section */}
+        <div className="mt-16">
+          <Card className="bg-background border-border">
+            <CardContent className="p-6">
+              <div className="text-center">
+                <h3 className="text-xl font-semibold text-foreground mb-3">{t("about.serviceAreas.title")}</h3>
+                <p className="text-muted-foreground text-pretty">{t("about.serviceAreas.description")}</p>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
       </div>
     </section>
   )

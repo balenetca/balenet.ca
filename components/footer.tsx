@@ -75,20 +75,20 @@ export function Footer() {
             <h4 className="font-semibold text-foreground mb-4">{t("footer.contact.title")}</h4>
             <div className="space-y-3">
               <div>
-                <p className="text-muted-foreground font-medium mb-1">Phone</p>
+                <p className="text-muted-foreground font-medium mb-1">{t("contact.info.phone")}</p>
                 <a href="tel:+15145778776" className="text-muted-foreground hover:text-primary transition-colors">(514) 577-8776</a>
               </div>
               <div>
-                <p className="text-muted-foreground font-medium mb-1">Email</p>
+                <p className="text-muted-foreground font-medium mb-1">{t("contact.info.email")}</p>
                 <a href="mailto:info@balenet.com" className="text-muted-foreground hover:text-primary transition-colors">info@balenet.com</a>
               </div>
               <div>
-                <p className="text-muted-foreground font-medium mb-1">Hours</p>
+                <p className="text-muted-foreground font-medium mb-1">{t("contact.info.hours")}</p>
                 <p className="text-muted-foreground">{t("contact.info.hoursValue")}</p>
               </div>
               <div>
-                <p className="text-muted-foreground font-medium mb-1">Service Areas</p>
-                <p className="text-muted-foreground">Ottawa, Gatineau, Carleton, Hull, Aylmer, Orleans, Kanata, Nepean, Gloucester, Ottawa South, Barrhaven, Stittsville</p>
+                <p className="text-muted-foreground font-medium mb-1">{t("contact.info.location")}</p>
+                <p className="text-muted-foreground">{t("contact.info.locationValue")}</p>
               </div>
             </div>
           </div>
