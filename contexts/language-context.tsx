@@ -42,7 +42,7 @@ const translations = {
       "Our mission is to transform construction sites into pristine, move-in ready spaces. We handle everything from heavy debris removal to detailed final cleaning, ensuring your project is completed to the highest standards.",
     "about.mission.title": "Our Mission",
     "about.vision.title": "Our Vision",
-    "about.vision.description": "To be the most trusted cleaning partner for builders, contractors, and property owners across the region.",
+    "about.vision.description": "To be the most trusted cleaning partner for builders, contractors, and property owners across the region. We are committed to delivering exceptional service that exceeds expectations while maintaining the highest standards of professionalism and reliability.",
     "about.values.title": "Our Core Values",
     "about.values.professionalism.title": "Professionalism",
     "about.values.professionalism.description": "We treat every project with care and respect",
@@ -52,6 +52,8 @@ const translations = {
     "about.values.reliability.description": "Showing up on time and finishing on schedule",
     "about.values.detail.title": "Attention to Detail",
     "about.values.detail.description": "From drywall dust to sparkling glass",
+    "about.coverage.title": "Service Coverage",
+    "about.coverage.description": "We proudly serve Ottawa, Carleton, Gatineau, and surrounding areas with reliable, professional construction cleaning services. Our local expertise ensures timely response and comprehensive coverage throughout the National Capital Region.",
 
     // Services
     "services.title": "Our Services",
@@ -200,7 +202,7 @@ const translations = {
       "Notre mission est de transformer les chantiers de construction en espaces impeccables et prêts à emménager. Nous nous occupons de tout, de l'enlèvement des gros débris au nettoyage final détaillé, en veillant à ce que votre projet soit terminé selon les plus hauts standards.",
     "about.mission.title": "Notre Mission",
     "about.vision.title": "Notre Vision",
-    "about.vision.description": "Être le partenaire de nettoyage le plus fiable pour les constructeurs, entrepreneurs et propriétaires de la région.",
+    "about.vision.description": "Être le partenaire de nettoyage le plus fiable pour les constructeurs, entrepreneurs et propriétaires de la région. Nous nous engageons à offrir un service exceptionnel qui dépasse les attentes tout en maintenant les plus hauts standards de professionnalisme et de fiabilité.",
     "about.values.title": "Nos Valeurs Fondamentales",
     "about.values.professionalism.title": "Professionnalisme",
     "about.values.professionalism.description": "Nous traitons chaque projet avec soin et respect",
@@ -210,6 +212,8 @@ const translations = {
     "about.values.reliability.description": "Arriver à l'heure et terminer selon l'horaire",
     "about.values.detail.title": "Attention aux détails",
     "about.values.detail.description": "De la poussière de cloison sèche au verre étincelant",
+    "about.coverage.title": "Couverture de service",
+    "about.coverage.description": "Nous servons fièrement Ottawa, Carleton, Gatineau et les environs avec des services de nettoyage de construction fiables et professionnels. Notre expertise locale garantit une réponse rapide et une couverture complète dans la région de la capitale nationale.",
 
     // Services
     "services.title": "Nos Services",

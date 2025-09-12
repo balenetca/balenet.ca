@@ -34,37 +34,10 @@ export function About() {
 
           <Card className="bg-background border-border">
             <CardContent className="p-6">
-              <h3 className="text-xl font-semibold text-foreground mb-4">{t("about.values.title")}</h3>
-              <div className="space-y-3">
-                <div className="flex items-start gap-2">
-                  <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <div>
-                    <span className="font-medium text-foreground">{t("about.values.professionalism.title")}</span>
-                    <p className="text-sm text-muted-foreground">{t("about.values.professionalism.description")}</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-2">
-                  <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <div>
-                    <span className="font-medium text-foreground">{t("about.values.safety.title")}</span>
-                    <p className="text-sm text-muted-foreground">{t("about.values.safety.description")}</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-2">
-                  <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <div>
-                    <span className="font-medium text-foreground">{t("about.values.reliability.title")}</span>
-                    <p className="text-sm text-muted-foreground">{t("about.values.reliability.description")}</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-2">
-                  <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <div>
-                    <span className="font-medium text-foreground">{t("about.values.detail.title")}</span>
-                    <p className="text-sm text-muted-foreground">{t("about.values.detail.description")}</p>
-                  </div>
-                </div>
-              </div>
+              <h3 className="text-xl font-semibold text-foreground mb-3">{t("about.coverage.title")}</h3>
+              <p className="text-muted-foreground text-pretty">
+                {t("about.coverage.description")}
+              </p>
             </CardContent>
           </Card>
         </div>
