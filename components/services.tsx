@@ -173,7 +173,8 @@ export function Services() {
               </CardContent>
             </Card>
 
-            <Card className="bg-card border-border overflow-hidden">
+            <div className="lg:col-span-3 lg:flex lg:justify-center lg:gap-8">
+              <Card className="bg-card border-border overflow-hidden lg:w-80">
               <div className="relative h-48">
                 <Image
                   src="/disaster-recovery-cleaning-emergency-response-team.jpg"
@@ -215,7 +216,7 @@ export function Services() {
               </CardContent>
             </Card>
 
-            <Card className="bg-card border-border overflow-hidden">
+              <Card className="bg-card border-border overflow-hidden lg:w-80">
               <div className="relative h-48">
                 <Image
                   src="/images/demolition-service.jpg"
@@ -255,7 +256,8 @@ export function Services() {
                   </li>
                 </ul>
               </CardContent>
-            </Card>
+              </Card>
+            </div>
           </div>
         </div>
       </div>
