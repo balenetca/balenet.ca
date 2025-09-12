@@ -6,7 +6,7 @@ export async function GET(): Promise<Response> {
   
   const rssItems = [
     {
-      title: 'BALE•NET - Professional Construction Cleaning Services',
+      title: 'BALE•NET - Construction Cleaning Services',
       description: 'Professional construction cleaning and debris removal services in Ottawa, Gatineau, Carleton, Hull, Aylmer, Orleans, Kanata, Nepean, Gloucester, Ottawa South, Barrhaven, and Stittsville. Post-construction cleanup, demolition services, and disaster recovery cleaning.',
       url: `${baseUrl}`,
       lastModified: new Date(),

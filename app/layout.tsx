@@ -8,7 +8,7 @@ import { LanguageProvider } from "@/contexts/language-context"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "BALE•NET - Professional Construction Cleaning Services | Ottawa, Gatineau",
+  title: "BALE•NET - Construction Cleaning Services | Ottawa, Gatineau",
   description:
     "Professional construction cleaning and debris removal services in Ottawa, Gatineau, Carleton, Hull, Aylmer, Orleans, Kanata, Nepean, Gloucester, Ottawa South, Barrhaven, and Stittsville. Free quotes available 24/7.",
   keywords: [
@@ -56,8 +56,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "BALE•NET - Professional Construction Cleaning Services | Ottawa, Gatineau",
-    description: "Professional construction cleaning and debris removal services in Ottawa, Gatineau, Carleton, Hull, Aylmer, Orleans, Kanata, Nepean, Gloucester, Ottawa South, Barrhaven, and Stittsville. Free quotes available 24/7.",
+    title: "BALE•NET - Construction Cleaning Services | Ottawa, Gatineau",
+    description: "Professional construction cleaning and debris removal services in Ottawa, Gatineau, and surrounding areas. Free quotes available 24/7.",
     url: "https://balenet.ca",
     siteName: "BALE•NET",
     images: [
@@ -73,8 +73,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "BALE•NET - Professional Construction Cleaning Services",
-    description: "Professional construction cleaning and debris removal services in Ottawa, Gatineau, Carleton, Hull, Aylmer, Orleans, Kanata, Nepean, Gloucester, Ottawa South, Barrhaven, and Stittsville. Free quotes available 24/7.",
+    title: "BALE•NET - Construction Cleaning Services",
+    description: "Professional construction cleaning and debris removal services in Ottawa, Gatineau, and surrounding areas. Free quotes available 24/7.",
     images: ["/images/balenet-logo.png"],
   },
   robots: {
