@@ -50,12 +50,22 @@ export function Hero() {
               <Button
                 size="lg"
                 className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-4 rounded-md"
+                asChild
               >
-                {t("hero.cta")}
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <a href="#contact">
+                  {t("hero.cta")}
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
               </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-4 rounded-md border-border bg-white/80">
-                {t("hero.phone")}
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="text-lg px-8 py-4 rounded-md border-border bg-white/80"
+                asChild
+              >
+                <a href="tel:+15145778776">
+                  {t("hero.phone")}
+                </a>
               </Button>
             </div>
           </div>
