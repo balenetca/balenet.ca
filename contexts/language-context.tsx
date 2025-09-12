@@ -23,7 +23,7 @@ const translations = {
     "nav.getQuote": "Get Quote",
 
     // Hero
-    "hero.title": "BALE•NET - During & Post-Construction Cleaning",
+    "hero.title": "BALE•NET - Professional Construction Cleanup",
     "hero.subtitle": "From debris to spotless, we handle the mess so you enjoy the results.",
     "hero.cta": "Get Free Quote",
     "hero.phone": "Call Now",
@@ -194,7 +194,7 @@ const translations = {
     "nav.getQuote": "Devis gratuit",
 
     // Hero
-    "hero.title": "BALE•NET - Nettoyage pendant et après construction",
+    "hero.title": "BALE•NET - Nettoyage professionnel de construction",
     "hero.subtitle": "Des débris à l'impeccable, nous nous occupons du désordre pour que vous profitiez des résultats.",
     "hero.cta": "Devis gratuit",
     "hero.phone": "Appelez maintenant",
