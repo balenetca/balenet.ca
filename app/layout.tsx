@@ -219,6 +219,9 @@ export default function RootLayout({
         <meta name="color-scheme" content="light dark" />
         <meta name="theme-color" content="#ff6b35" media="(prefers-color-scheme: light)" />
         <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: dark)" />
+        
+        {/* Search Engine Verification */}
+        <meta name="msvalidate.01" content="D3C8DB40A80CDB1CD8392713ECB357B3" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
