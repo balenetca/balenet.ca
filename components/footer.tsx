@@ -1,6 +1,6 @@
 "use client"
 
-import { Sparkles, Phone, Mail, MapPin } from "lucide-react"
+import { Sparkles, Phone, Mail, MapPin, Clock } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
 
 export function Footer() {
@@ -85,6 +85,10 @@ export function Footer() {
               <div className="flex items-center space-x-3">
                 <MapPin className="h-4 w-4 text-primary" />
                 <span className="text-muted-foreground">{t("contact.info.locationValue")}</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Clock className="h-4 w-4 text-primary" />
+                <span className="text-muted-foreground">{t("contact.info.availability")}</span>
               </div>
             </div>
           </div>

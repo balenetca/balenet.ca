@@ -172,6 +172,7 @@ const translations = {
     "contact.info.hoursValue": "Monday - Friday: 7:00 AM - 6:00 PM",
     "contact.info.location": "Location",
     "contact.info.locationValue": "Ottawa - Gatineau",
+    "contact.info.availability": "7 days/week 24/7",
 
     // Breadcrumb
     "breadcrumb.home": "Home",
@@ -344,6 +345,7 @@ const translations = {
     "contact.info.hoursValue": "Lundi - Vendredi: 7h00 - 18h00",
     "contact.info.location": "Emplacement",
     "contact.info.locationValue": "Ottawa - Gatineau",
+    "contact.info.availability": "7 jours/semaine 24/7",
 
     // Breadcrumb
     "breadcrumb.home": "Accueil",
