@@ -70,6 +70,28 @@ export function Footer() {
               </li>
             </ul>
           </div>
+
+          <div>
+            <h4 className="font-semibold text-foreground mb-4">{t("footer.contact.title")}</h4>
+            <div className="space-y-3">
+              <div>
+                <p className="text-muted-foreground font-medium">Phone</p>
+                <a href="tel:+15145778776" className="text-muted-foreground hover:text-primary transition-colors">(514) 577-8776</a>
+              </div>
+              <div>
+                <p className="text-muted-foreground font-medium">Email</p>
+                <a href="mailto:info@balenet.com" className="text-muted-foreground hover:text-primary transition-colors">info@balenet.com</a>
+              </div>
+              <div>
+                <p className="text-muted-foreground font-medium">Hours</p>
+                <p className="text-muted-foreground">{t("contact.info.hoursValue")}</p>
+              </div>
+              <div>
+                <p className="text-muted-foreground font-medium">Location</p>
+                <p className="text-muted-foreground">Ottawa - Gatineau</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
