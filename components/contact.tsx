@@ -25,22 +25,34 @@ export function Contact() {
     }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     
-    // Create mailto link with form data
-    const subject = encodeURIComponent(`Quote Request from ${formData.name}`)
-    const body = encodeURIComponent(`
-Name: ${formData.name}
-Email: ${formData.email}
-Phone: ${formData.phone}
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
 
-Message:
-${formData.message}
-    `)
-    
-    const mailtoLink = `mailto:info@balenet.com?subject=${subject}&body=${body}`
-    window.location.href = mailtoLink
+      if (response.ok) {
+        // Reset form on success
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          message: ""
+        })
+        alert(t("contact.form.success") || "Thank you! Your message has been sent successfully.")
+      } else {
+        throw new Error('Failed to send email')
+      }
+    } catch (error) {
+      console.error('Error sending email:', error)
+      alert(t("contact.form.error") || "Sorry, there was an error sending your message. Please try again.")
+    }
   }
 
   return (
