@@ -29,15 +29,6 @@ export function Contact() {
     e.preventDefault()
     
     try {
-      const submissionDate = new Date().toLocaleString('en-CA', {
-        timeZone: 'America/Toronto',
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-        hour: '2-digit',
-        minute: '2-digit'
-      })
-
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: {
@@ -49,88 +40,32 @@ export function Contact() {
           email: formData.email,
           phone: formData.phone,
           message: formData.message,
-          subject: `New Quote Request from BALE•NET Website - ${formData.name}`,
+          subject: `New Message from BALE•NET Website - Quote Request from ${formData.name}`,
           from_name: 'BALE•NET Website',
           replyto: formData.email,
           to_email: 'info@balenet.com',
           
-          // Professional email template
-          template: 'html',
-          form_name: 'BALE•NET Contact Form',
-          form_url: 'https://www.balenet.ca',
-          submission_date: submissionDate,
-          
-          // Rich HTML formatting for better email appearance
-          message_html: `
-            <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e0e0e0; border-radius: 8px;">
-              <div style="background: linear-gradient(135deg, #f97316, #ea580c); color: white; padding: 20px; border-radius: 8px 8px 0 0; text-align: center;">
-                <h2 style="margin: 0; font-size: 24px;">🏗️ BALE•NET</h2>
-                <p style="margin: 5px 0 0 0; opacity: 0.9;">New Quote Request</p>
-              </div>
-              
-              <div style="padding: 25px; background: #fafafa;">
-                <h3 style="color: #f97316; margin-top: 0; border-bottom: 2px solid #f97316; padding-bottom: 10px;">Contact Information</h3>
-                
-                <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
-                  <tr>
-                    <td style="padding: 8px 0; font-weight: bold; color: #374151; width: 120px;">Name:</td>
-                    <td style="padding: 8px 0; color: #111827;">${formData.name}</td>
-                  </tr>
-                  <tr style="background: #f9fafb;">
-                    <td style="padding: 8px 0; font-weight: bold; color: #374151;">Email:</td>
-                    <td style="padding: 8px 0; color: #111827;"><a href="mailto:${formData.email}" style="color: #f97316; text-decoration: none;">${formData.email}</a></td>
-                  </tr>
-                  <tr>
-                    <td style="padding: 8px 0; font-weight: bold; color: #374151;">Phone:</td>
-                    <td style="padding: 8px 0; color: #111827;"><a href="tel:${formData.phone}" style="color: #f97316; text-decoration: none;">${formData.phone}</a></td>
-                  </tr>
-                  <tr style="background: #f9fafb;">
-                    <td style="padding: 8px 0; font-weight: bold; color: #374151;">Submitted:</td>
-                    <td style="padding: 8px 0; color: #111827;">${submissionDate}</td>
-                  </tr>
-                </table>
-                
-                <h3 style="color: #f97316; margin: 20px 0 10px 0; border-bottom: 2px solid #f97316; padding-bottom: 10px;">Project Details</h3>
-                <div style="background: white; padding: 15px; border-left: 4px solid #f97316; border-radius: 4px; margin-bottom: 20px;">
-                  <p style="margin: 0; line-height: 1.6; color: #111827;">${formData.message.replace(/\n/g, '<br>')}</p>
-                </div>
-                
-                <div style="background: #fef3c7; border: 1px solid #f59e0b; border-radius: 6px; padding: 15px; margin-top: 20px;">
-                  <p style="margin: 0; color: #92400e; font-weight: bold;">📞 Quick Response Required</p>
-                  <p style="margin: 5px 0 0 0; color: #92400e; font-size: 14px;">This is a potential customer inquiry. Please respond within 24 hours for best results.</p>
-                </div>
-              </div>
-              
-              <div style="background: #374151; color: white; padding: 15px; border-radius: 0 0 8px 8px; text-align: center; font-size: 12px;">
-                <p style="margin: 0;">Submitted from <a href="https://www.balenet.ca" style="color: #f97316; text-decoration: none;">www.balenet.ca</a></p>
-                <p style="margin: 5px 0 0 0; opacity: 0.8;">BALE•NET Professional Construction Cleaning & Debris Removal</p>
-              </div>
-            </div>
-          `,
-          
           // Auto-reply to customer
           auto_reply: true,
           auto_reply_subject: 'Thank you for contacting BALE•NET - We\'ll respond within 24 hours',
-          auto_reply_message: `
-            Hi ${formData.name},
+          auto_reply_message: `Hi ${formData.name},
 
-            Thank you for reaching out to BALE•NET! We've received your quote request and appreciate your interest in our professional construction cleaning and debris removal services.
+Thank you for reaching out to BALE•NET! We've received your quote request and appreciate your interest in our professional construction cleaning and debris removal services.
 
-            Our team will review your project details and get back to you within 24 hours with a personalized quote.
+Our team will review your project details and get back to you within 24 hours with a personalized quote.
 
-            In the meantime, feel free to visit our website at www.balenet.ca to learn more about our services.
+In the meantime, feel free to visit our website at www.balenet.ca to learn more about our services.
 
-            Best regards,
-            The BALE•NET Team
+Best regards,
+The BALE•NET Team
 
-            📞 (514) 577-8776
-            ✉️ info@balenet.com
-            🌐 www.balenet.ca
+📞 (514) 577-8776
+✉️ info@balenet.com
+🌐 www.balenet.ca
 
-            ---
-            BALE•NET Professional Construction Cleaning & Debris Removal
-            Serving Ottawa, Carleton, Gatineau, and surrounding areas
-          `
+---
+BALE•NET Professional Construction Cleaning & Debris Removal
+Serving Ottawa, Carleton, Gatineau, and surrounding areas`
         }),
       })
 
