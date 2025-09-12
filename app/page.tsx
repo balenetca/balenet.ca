@@ -6,6 +6,36 @@ import { WhyChooseUs } from "@/components/why-choose-us"
 import { Testimonials } from "@/components/testimonials"
 import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "BALE•NET - Professional Construction Cleaning & Debris Removal Services | Ottawa, Gatineau, Carleton | Free Quotes Available 24/7",
+  description: "Professional construction cleaning and debris removal services in Ottawa, Gatineau, Carleton, Hull, Aylmer, Orleans, Kanata, Nepean, Gloucester, Ottawa South, Barrhaven, and Stittsville. Post-construction cleanup, demolition services, and disaster recovery cleaning. Free quotes available 24/7.",
+  keywords: [
+    "construction cleaning Ottawa",
+    "post construction cleanup Gatineau",
+    "debris removal Ottawa",
+    "construction cleaning Carleton",
+    "post construction cleanup Hull",
+    "construction cleaning Aylmer",
+    "debris removal Orleans",
+    "construction cleaning Kanata",
+    "post construction cleanup Nepean",
+    "construction cleaning Gloucester",
+    "debris removal Ottawa South",
+    "construction cleaning Barrhaven",
+    "post construction cleanup Stittsville",
+    "demolition services Ottawa",
+    "demolition services Gatineau",
+    "disaster recovery cleaning",
+    "final cleaning construction",
+    "deep cleaning construction",
+    "construction waste removal",
+    "site cleanup services",
+    "BALENET",
+    "BALE•NET"
+  ],
+}
 
 export default function HomePage() {
   const faqStructuredData = {
@@ -41,7 +71,7 @@ export default function HomePage() {
         "name": "What are BALE•NET's operating hours?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "BALE•NET operates Monday through Friday from 7:00 AM to 6:00 PM. Emergency services may be available outside regular hours for urgent construction cleaning needs."
+          "text": "BALE•NET operates 7 days a week, 24 hours a day. We provide round-the-clock construction cleaning services to accommodate urgent project needs and tight deadlines."
         }
       },
       {

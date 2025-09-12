@@ -8,7 +8,7 @@ import { LanguageProvider } from "@/contexts/language-context"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "BALE•NET - Professional Construction Cleaning Services | Ottawa, Gatineau",
+  title: "BALE•NET - Professional Construction Cleaning & Debris Removal Services | Ottawa, Gatineau, Carleton | Free Quotes Available 24/7",
   description:
     "Professional construction cleaning and debris removal services in Ottawa, Gatineau, Carleton, Hull, Aylmer, Orleans, Kanata, Nepean, Gloucester, Ottawa South, Barrhaven, and Stittsville. Post-construction cleanup, demolition services, and disaster recovery cleaning. Free quotes available.",
   keywords: [
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "BALE•NET - Professional Construction Cleaning Services | Ottawa, Gatineau",
+    title: "BALE•NET - Professional Construction Cleaning & Debris Removal Services | Ottawa, Gatineau, Carleton | Free Quotes Available 24/7",
     description: "Professional construction cleaning and debris removal services in Ottawa, Gatineau, Carleton, Hull, Aylmer, Orleans, Kanata, Nepean, Gloucester, Ottawa South, Barrhaven, and Stittsville. Post-construction cleanup, demolition services, and disaster recovery cleaning.",
     url: "https://balenet.ca",
     siteName: "BALE•NET",
@@ -251,6 +251,9 @@ export default function RootLayout({
         
         {/* PWA Manifest */}
         <link rel="manifest" href="/manifest.json" />
+        
+        {/* RSS Feed */}
+        <link rel="alternate" type="application/rss+xml" title="BALE•NET RSS Feed" href="/feed.xml" />
         
         {/* Apple Web App Meta */}
         <meta name="apple-mobile-web-app-capable" content="yes" />
