@@ -1,6 +1,6 @@
 "use client"
 
-import { Sparkles } from "lucide-react"
+import { Sparkles, Phone, Mail, MapPin } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
 
 export function Footer() {
@@ -74,21 +74,17 @@ export function Footer() {
           <div>
             <h4 className="font-semibold text-foreground mb-4">{t("footer.contact.title")}</h4>
             <div className="space-y-3">
-              <div>
-                <p className="text-muted-foreground font-medium mb-1">{t("contact.info.phone")}</p>
+              <div className="flex items-center space-x-3">
+                <Phone className="h-4 w-4 text-primary" />
                 <a href="tel:+15145778776" className="text-muted-foreground hover:text-primary transition-colors">(514) 577-8776</a>
               </div>
-              <div>
-                <p className="text-muted-foreground font-medium mb-1">{t("contact.info.email")}</p>
+              <div className="flex items-center space-x-3">
+                <Mail className="h-4 w-4 text-primary" />
                 <a href="mailto:info@balenet.com" className="text-muted-foreground hover:text-primary transition-colors">info@balenet.com</a>
               </div>
-              <div>
-                <p className="text-muted-foreground font-medium mb-1">{t("contact.info.hours")}</p>
-                <p className="text-muted-foreground">{t("contact.info.hoursValue")}</p>
-              </div>
-              <div>
-                <p className="text-muted-foreground font-medium mb-1">{t("contact.info.location")}</p>
-                <p className="text-muted-foreground">{t("contact.info.locationValue")}</p>
+              <div className="flex items-center space-x-3">
+                <MapPin className="h-4 w-4 text-primary" />
+                <span className="text-muted-foreground">{t("contact.info.locationValue")}</span>
               </div>
             </div>
           </div>
