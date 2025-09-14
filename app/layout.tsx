@@ -89,7 +89,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: "your-google-verification-code", // Replace with actual verification code
+    google: process.env.GOOGLE_VERIFICATION_CODE || "your-google-verification-code",
   },
   category: "construction cleaning services",
 }
@@ -215,6 +215,11 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <head>
+        {/* Hreflang Tags for Bilingual SEO */}
+        <link rel="alternate" hrefLang="en-ca" href="https://balenet.ca/en" />
+        <link rel="alternate" hrefLang="fr-ca" href="https://balenet.ca/fr" />
+        <link rel="alternate" hrefLang="x-default" href="https://balenet.ca" />
+        
         {/* Accessibility Meta Tags */}
         <meta name="color-scheme" content="light dark" />
         <meta name="theme-color" content="#ff6b35" media="(prefers-color-scheme: light)" />
