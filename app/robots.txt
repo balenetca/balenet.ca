@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://balenet.ca/sitemap.xml
+
+# Disallow private areas
+Disallow: /private/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Allow important pages
+Allow: /en
+Allow: /fr
+Allow: /feed.xml
+Allow: /manifest.json

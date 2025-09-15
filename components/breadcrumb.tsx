@@ -104,32 +104,32 @@ export function Breadcrumb({ items }: BreadcrumbProps) {
 export const breadcrumbConfigs = {
   home: [],
   services: [
-    { name: "Services", href: "/#services" }
+    { name: "Services", href: "/en#services" }
   ],
   about: [
-    { name: "About", href: "/#about" }
+    { name: "About", href: "/en#about" }
   ],
   contact: [
-    { name: "Contact", href: "/#contact" }
+    { name: "Contact", href: "/en#contact" }
   ],
   quote: [
-    { name: "Contact", href: "/#contact" },
+    { name: "Contact", href: "/en#contact" },
     { name: "Get Quote" }
   ],
   constructionCleaning: [
-    { name: "Services", href: "/#services" },
+    { name: "Services", href: "/en#services" },
     { name: "Construction Cleaning" }
   ],
   demolitionServices: [
-    { name: "Services", href: "/#services" },
+    { name: "Services", href: "/en#services" },
     { name: "Demolition Services" }
   ],
   debrisRemoval: [
-    { name: "Services", href: "/#services" },
+    { name: "Services", href: "/en#services" },
     { name: "Debris Removal" }
   ],
   disasterRecovery: [
-    { name: "Services", href: "/#services" },
+    { name: "Services", href: "/en#services" },
     { name: "Disaster Recovery Cleaning" }
   ]
 }

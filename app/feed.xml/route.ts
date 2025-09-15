@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export async function GET(): Promise<Response> {
-  const baseUrl = 'https://www.balenet.ca'
+  const baseUrl = 'https://balenet.ca'
   const siteName = 'BALE•NET'
   
   const rssItems = [

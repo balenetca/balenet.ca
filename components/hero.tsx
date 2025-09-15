@@ -52,7 +52,7 @@ export function Hero() {
                 className="bg-primary text-primary-foreground hover:bg-primary/90 text-base lg:text-lg px-6 lg:px-8 py-3 lg:py-4 rounded-md"
                 asChild
               >
-                <a href="#contact">
+                <a href="/en#contact">
                   {t("hero.cta")}
                   <ArrowRight className="ml-2 h-4 w-4 lg:h-5 lg:w-5" />
                 </a>

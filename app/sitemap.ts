@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 
 // Sitemap for BALE•NET construction cleaning services
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.balenet.ca'
+  const baseUrl = 'https://balenet.ca'
   const lastModified = new Date()
   
   return [
@@ -13,33 +13,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1.0,
     },
     {
-      url: `${baseUrl}/#services`,
+      url: `${baseUrl}/en`,
       lastModified,
-      changeFrequency: 'monthly',
-      priority: 0.8,
+      changeFrequency: 'weekly',
+      priority: 0.9,
     },
     {
-      url: `${baseUrl}/#about`,
+      url: `${baseUrl}/fr`,
       lastModified,
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/#why-choose`,
-      lastModified,
-      changeFrequency: 'monthly',
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/#testimonials`,
-      lastModified,
-      changeFrequency: 'monthly',
-      priority: 0.5,
-    },
-    {
-      url: `${baseUrl}/#contact`,
-      lastModified,
-      changeFrequency: 'monthly',
+      changeFrequency: 'weekly',
       priority: 0.9,
     },
   ]

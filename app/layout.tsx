@@ -213,7 +213,7 @@ export default function RootLayout({
   }
 
   return (
-    <html lang="fr">
+    <html lang="en">
       <head>
         {/* Hreflang Tags for Bilingual SEO */}
         <link rel="alternate" hrefLang="en-ca" href="https://balenet.ca/en" />
@@ -257,7 +257,7 @@ export default function RootLayout({
         {/* PWA Manifest */}
         <link rel="manifest" href="/manifest.json" />
         
-        {/* RSS Feed */}
+        {/* RSS Feed - Only if feed.xml exists */}
         <link rel="alternate" type="application/rss+xml" title="BALE•NET RSS Feed" href="/feed.xml" />
         
         {/* Apple Web App Meta */}

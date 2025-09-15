@@ -23,22 +23,22 @@ export function Footer() {
             <h4 className="font-semibold text-foreground mb-4">{t("footer.links.title")}</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#home" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="/en#home" className="text-muted-foreground hover:text-primary transition-colors">
                   {t("nav.home")}
                 </a>
               </li>
               <li>
-                <a href="#services" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="/en#services" className="text-muted-foreground hover:text-primary transition-colors">
                   {t("nav.services")}
                 </a>
               </li>
               <li>
-                <a href="#about" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="/en#about" className="text-muted-foreground hover:text-primary transition-colors">
                   {t("nav.about")}
                 </a>
               </li>
               <li>
-                <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="/en#contact" className="text-muted-foreground hover:text-primary transition-colors">
                   {t("nav.contact")}
                 </a>
               </li>
@@ -49,22 +49,22 @@ export function Footer() {
             <h4 className="font-semibold text-foreground mb-4">{t("footer.services.title")}</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#services" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="/en#services" className="text-muted-foreground hover:text-primary transition-colors">
                   {t("services.postConstruction.title")}
                 </a>
               </li>
               <li>
-                <a href="#services" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="/en#services" className="text-muted-foreground hover:text-primary transition-colors">
                   {t("services.debrisRemoval.title")}
                 </a>
               </li>
               <li>
-                <a href="#services" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="/en#services" className="text-muted-foreground hover:text-primary transition-colors">
                   {t("services.deepCleaning.title")}
                 </a>
               </li>
               <li>
-                <a href="#services" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="/en#services" className="text-muted-foreground hover:text-primary transition-colors">
                   {t("services.demolition.title")}
                 </a>
               </li>
