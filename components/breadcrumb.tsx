@@ -88,7 +88,7 @@ export function Breadcrumb({ items }: BreadcrumbProps) {
                   {item.name}
                 </span>
               )}
-              <meta itemProp="position" content={index + 2} />
+              <meta itemProp="position" content={String(index + 2)} />
               {index < items.length - 1 && (
                 <ChevronRight className="h-4 w-4 mx-2" />
               )}
