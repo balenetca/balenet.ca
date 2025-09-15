@@ -38,7 +38,7 @@ export async function GET(): Promise<Response> {
   ]
 
   const rssXml = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
   <channel>
     <title>${siteName} - Construction Cleaning Services</title>
     <description>Professional construction cleaning and debris removal services in Ottawa, Gatineau, Carleton, Hull, Aylmer, Orleans, Kanata, Nepean, Gloucester, Ottawa South, Barrhaven, and Stittsville.</description>

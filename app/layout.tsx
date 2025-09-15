@@ -220,6 +220,9 @@ export default function RootLayout({
         <link rel="alternate" hrefLang="fr-ca" href="https://balenet.ca/fr" />
         <link rel="alternate" hrefLang="x-default" href="https://balenet.ca" />
         
+        {/* HTTPS Canonical URLs */}
+        <link rel="canonical" href="https://balenet.ca" />
+        
         {/* Accessibility Meta Tags */}
         <meta name="color-scheme" content="light dark" />
         <meta name="theme-color" content="#ff6b35" media="(prefers-color-scheme: light)" />
@@ -267,8 +270,8 @@ export default function RootLayout({
         {/* Performance Optimizations */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link rel="dns-prefetch" href="//fonts.googleapis.com" />
-        <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
       </head>
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
         {/* Skip to main content link */}

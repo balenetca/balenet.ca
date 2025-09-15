@@ -1,0 +1,37 @@
+# BALE•NET Security Policy
+
+## Reporting Security Vulnerabilities
+
+If you discover a security vulnerability in our website or services, please report it to us immediately.
+
+### How to Report
+- **Email**: info@balenet.com
+- **Subject**: Security Vulnerability Report
+- **Response Time**: We will respond within 24 hours
+
+### What to Include
+- Description of the vulnerability
+- Steps to reproduce
+- Potential impact
+- Suggested fix (if any)
+
+### Our Commitment
+- We take security seriously
+- We will investigate all reports promptly
+- We will keep you informed of our progress
+- We will not take legal action against security researchers who follow responsible disclosure
+
+### Scope
+This policy applies to:
+- balenet.ca website
+- All subdomains
+- Our online services
+- Mobile applications
+
+### Out of Scope
+- Social engineering attacks
+- Physical attacks
+- Denial of service attacks
+- Issues requiring physical access to devices
+
+Thank you for helping keep BALE•NET secure.

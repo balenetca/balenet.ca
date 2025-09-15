@@ -12,10 +12,10 @@ export const metadata: Metadata = {
   title: "BALE•NET - Construction Cleaning Services | Ottawa, Gatineau",
   description: "Professional construction cleaning and debris removal services in Ottawa, Gatineau, Carleton, Hull, Aylmer, Orleans, Kanata, Nepean, Gloucester, Ottawa South, Barrhaven, and Stittsville. Free quotes available 24/7.",
   alternates: {
-    canonical: "/en",
+    canonical: "https://balenet.ca/en",
     languages: {
-      "fr-CA": "/fr",
-      "x-default": "/",
+      "fr-CA": "https://balenet.ca/fr",
+      "x-default": "https://balenet.ca",
     },
   },
 }
