@@ -3,31 +3,6 @@ const nextConfig = {
   // Redirects to prevent 404s
   async redirects() {
     return [
-      // Redirect HTTP to HTTPS
-      {
-        source: '/(.*)',
-        has: [
-          {
-            type: 'header',
-            key: 'x-forwarded-proto',
-            value: 'http',
-          },
-        ],
-        destination: 'https://balenet.ca/:path*',
-        permanent: true,
-      },
-      // Redirect www to non-www
-      {
-        source: '/(.*)',
-        has: [
-          {
-            type: 'host',
-            value: 'www.balenet.ca',
-          },
-        ],
-        destination: 'https://balenet.ca/:path*',
-        permanent: true,
-      },
       // Redirect old hash-based URLs to new structure
       {
         source: '/#services',
