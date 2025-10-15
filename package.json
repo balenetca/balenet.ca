@@ -1,0 +1,24 @@
+{
+  "name": "balenet-construction-site",
+  "version": "1.0.0",
+  "description": "BaleNet Group - Professional Construction & Cleanup Services",
+  "main": "demo-construction.html",
+  "scripts": {
+    "build": "echo 'Static site - no build needed'",
+    "start": "echo 'Static site - open demo-construction.html in browser'",
+    "dev": "echo 'Static site - open demo-construction.html in browser'"
+  },
+  "keywords": [
+    "construction",
+    "cleanup",
+    "services",
+    "ottawa",
+    "gatineau",
+    "balenet"
+  ],
+  "author": "BaleNet Group",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
