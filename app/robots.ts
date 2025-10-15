@@ -2,13 +2,11 @@ import { MetadataRoute } from 'next'
 
 export default function robots(): MetadataRoute.Robots {
   return {
-    rules: [
-      {
-        userAgent: '*',
-        allow: '/',
-        disallow: ['/private/', '/api/', '/_next/', '/admin/'],
-      },
-    ],
-    sitemap: 'https://balenet.ca/sitemap.xml',
+    rules: {
+      userAgent: '*',
+      allow: '/',
+      disallow: ['/privacy', '/terms', '/fr/confidentialite', '/fr/conditions'],
+    },
+    sitemap: 'https://www.balenet.ca/sitemap.xml',
   }
 }
