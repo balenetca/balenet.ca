@@ -16,10 +16,6 @@
       "dest": "/index.html"
     },
     {
-      "src": "/demo-construction.html",
-      "dest": "/demo-construction.html"
-    },
-    {
       "src": "/(.*\\.(css|js|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot))",
       "dest": "/$1"
     },

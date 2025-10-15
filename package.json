@@ -2,11 +2,11 @@
   "name": "balenet-construction-site",
   "version": "1.0.0",
   "description": "BaleNet Group - Professional Construction & Cleanup Services",
-  "main": "demo-construction.html",
+  "main": "index.html",
   "scripts": {
     "build": "echo 'Static site - no build needed'",
-    "start": "echo 'Static site - open demo-construction.html in browser'",
-    "dev": "echo 'Static site - open demo-construction.html in browser'",
+    "start": "echo 'Static site - open index.html in browser'",
+    "dev": "echo 'Static site - open index.html in browser'",
     "vercel-build": "echo 'Static site - no build needed'"
   },
   "keywords": [
