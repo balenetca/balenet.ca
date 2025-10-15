@@ -24,7 +24,7 @@ const translations = {
     "nav.contact": "Contact",
     "nav.getQuote": "Get Quote",
 
-    // Hero
+    // Hero - Updated content
     "hero.title": "BALE•NET - Professional Construction Cleanup",
     "hero.subtitle": "From debris to spotless, we handle the mess so you enjoy the results.",
     "hero.cta": "Get Free Quote",

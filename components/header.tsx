@@ -1,5 +1,5 @@
 "use client"
-
+// Updated header component
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import { useLanguage } from "@/contexts/language-context"

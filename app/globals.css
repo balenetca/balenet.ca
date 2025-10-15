@@ -3,8 +3,8 @@
 
 @custom-variant dark (&:is(.dark *));
 
-:root {
-  /* Updated color tokens to match BALENET logo orange/yellow and black scheme */
+  :root {
+    /* Updated color tokens to match BALENET logo orange/yellow and black scheme - Modified */
   --background: oklch(1 0 0); /* Pure White */
   --foreground: oklch(0.15 0 0); /* Very Dark Gray/Black #262626 */
   --card: oklch(1 0 0); /* White cards */
