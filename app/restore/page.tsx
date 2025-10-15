@@ -24,6 +24,13 @@ export const metadata: Metadata = {
     "Ottawa disaster recovery",
     "Gatineau emergency cleanup"
   ],
+  alternates: {
+    canonical: "https://www.balenet.ca/restore",
+    languages: {
+      'en': 'https://www.balenet.ca/restore',
+      'fr': 'https://www.balenet.ca/fr/restaurer',
+    },
+  },
 }
 
 export default function RestorePage() {

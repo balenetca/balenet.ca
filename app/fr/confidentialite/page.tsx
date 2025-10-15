@@ -7,6 +7,13 @@ export const metadata: Metadata = {
   title: "Politique de Confidentialité - BaleNet Group Inc",
   description: "Politique de confidentialité pour BaleNet Group Inc. Apprenez comment nous collectons, utilisons et protégeons vos informations personnelles.",
   robots: "noindex, nofollow",
+  alternates: {
+    canonical: "https://www.balenet.ca/fr/confidentialite",
+    languages: {
+      'en': 'https://www.balenet.ca/privacy',
+      'fr': 'https://www.balenet.ca/fr/confidentialite',
+    },
+  },
 }
 
 export default function ConfidentialitePage() {

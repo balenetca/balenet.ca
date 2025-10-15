@@ -7,6 +7,13 @@ export const metadata: Metadata = {
   title: "Terms of Service - BaleNet Group Inc",
   description: "Terms of Service for BaleNet Group Inc. Read our terms and conditions for using our services.",
   robots: "noindex, nofollow",
+  alternates: {
+    canonical: "https://www.balenet.ca/terms",
+    languages: {
+      'en': 'https://www.balenet.ca/terms',
+      'fr': 'https://www.balenet.ca/fr/conditions',
+    },
+  },
 }
 
 export default function TermsPage() {

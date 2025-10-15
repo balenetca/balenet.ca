@@ -7,6 +7,13 @@ export const metadata: Metadata = {
   title: "Privacy Policy - BaleNet Group Inc",
   description: "Privacy Policy for BaleNet Group Inc. Learn how we collect, use, and protect your personal information.",
   robots: "noindex, nofollow",
+  alternates: {
+    canonical: "https://www.balenet.ca/privacy",
+    languages: {
+      'en': 'https://www.balenet.ca/privacy',
+      'fr': 'https://www.balenet.ca/fr/confidentialite',
+    },
+  },
 }
 
 export default function PrivacyPage() {

@@ -23,6 +23,13 @@ export const metadata: Metadata = {
     "services de nettoyage Ottawa",
     "nettoyage Gatineau"
   ],
+  alternates: {
+    canonical: "https://www.balenet.ca/fr/nettoyer",
+    languages: {
+      'en': 'https://www.balenet.ca/clean',
+      'fr': 'https://www.balenet.ca/fr/nettoyer',
+    },
+  },
 }
 
 export default function NettoyerPage() {

@@ -24,6 +24,13 @@ export const metadata: Metadata = {
     "récupération d'urgence Ottawa",
     "nettoyage d'urgence Gatineau"
   ],
+  alternates: {
+    canonical: "https://www.balenet.ca/fr/restaurer",
+    languages: {
+      'en': 'https://www.balenet.ca/restore',
+      'fr': 'https://www.balenet.ca/fr/restaurer',
+    },
+  },
 }
 
 export default function RestaurerPage() {

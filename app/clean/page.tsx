@@ -23,6 +23,13 @@ export const metadata: Metadata = {
     "Ottawa cleaning services",
     "Gatineau cleaning"
   ],
+  alternates: {
+    canonical: "https://www.balenet.ca/clean",
+    languages: {
+      'en': 'https://www.balenet.ca/clean',
+      'fr': 'https://www.balenet.ca/fr/nettoyer',
+    },
+  },
 }
 
 export default function CleanPage() {

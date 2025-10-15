@@ -24,6 +24,13 @@ export const metadata: Metadata = {
     "Ottawa construction",
     "Gatineau renovations"
   ],
+  alternates: {
+    canonical: "https://www.balenet.ca/construct",
+    languages: {
+      'en': 'https://www.balenet.ca/construct',
+      'fr': 'https://www.balenet.ca/fr/construire',
+    },
+  },
 }
 
 export default function ConstructPage() {
