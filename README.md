@@ -81,7 +81,33 @@ This site is deployed on **Vercel** as a static site:
 
 - **Phone**: (514) 577-8776
 - **Email**: info@balenet.ca
-- **Service Areas**: Ottawa, Gatineau, and surrounding areas
+- **Website**: https://balenet.ca
+- **Service Areas**: Ottawa, Gatineau, Kanata, Orleans, Nepean, Gloucester, Barrhaven, Stittsville, and surrounding areas
+
+## 🎯 Our Three Pillars
+
+### Clean Services
+- Daily janitorial services
+- Post-construction cleanup
+- Deep cleaning and disinfection
+- Floor care and maintenance
+- Window cleaning
+- High-dusting services
+
+### Restore Services
+- Emergency flood and fire cleanup
+- Mold remediation
+- Odor control and decontamination
+- Surface repairs and restoration
+- Paint refresh services
+- Insurance scope support
+
+### Construct Services
+- Tenant fit-outs and renovations
+- Small builds and construction
+- Demolition services
+- Facility upgrades
+- Compliance and safety solutions
 
 ## 📄 License
 

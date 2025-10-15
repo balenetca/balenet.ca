@@ -6,7 +6,8 @@
   "scripts": {
     "build": "echo 'Static site - no build needed'",
     "start": "echo 'Static site - open demo-construction.html in browser'",
-    "dev": "echo 'Static site - open demo-construction.html in browser'"
+    "dev": "echo 'Static site - open demo-construction.html in browser'",
+    "vercel-build": "echo 'Static site - no build needed'"
   },
   "keywords": [
     "construction",
@@ -14,11 +15,14 @@
     "services",
     "ottawa",
     "gatineau",
-    "balenet"
+    "balenet",
+    "static-site"
   ],
   "author": "BaleNet Group",
   "license": "MIT",
   "engines": {
     "node": ">=14.0.0"
-  }
+  },
+  "dependencies": {},
+  "devDependencies": {}
 }

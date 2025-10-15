@@ -1,0 +1,23 @@
+# Ignore any leftover Next.js files
+.next/
+out/
+.vercel/
+
+# Ignore development files
+node_modules/
+.git/
+.gitignore
+
+# Ignore any build artifacts
+build/
+dist/
+
+# Keep all static assets
+!css/
+!js/
+!img/
+!vendor/
+!php/
+!ajax/
+!master/
+!video/
