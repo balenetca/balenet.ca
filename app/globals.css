@@ -4,75 +4,93 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Updated color tokens to match BALENET logo orange/yellow and black scheme */
+  /* BaleNet Group Inc - Steel Navy/Gunmetal color scheme */
   --background: oklch(1 0 0); /* Pure White */
-  --foreground: oklch(0.15 0 0); /* Very Dark Gray/Black #262626 */
+  --foreground: oklch(0.15 0.02 220); /* Steel Navy #0E1A24 */
   --card: oklch(1 0 0); /* White cards */
-  --card-foreground: oklch(0.15 0 0); /* Very Dark Gray */
+  --card-foreground: oklch(0.15 0.02 220); /* Steel Navy */
   --popover: oklch(1 0 0); /* White */
-  --popover-foreground: oklch(0.15 0 0); /* Very Dark Gray */
-  --primary: oklch(0.65 0.15 65); /* Orange from logo #ea580c */
+  --popover-foreground: oklch(0.15 0.02 220); /* Steel Navy */
+  --primary: oklch(0.5 0.15 260); /* Construct Cobalt #2D62F1 */
   --primary-foreground: oklch(1 0 0); /* White */
-  --secondary: oklch(0.75 0.12 75); /* Yellow from logo #eab308 */
-  --secondary-foreground: oklch(0.15 0 0); /* Dark text on yellow */
-  --muted: oklch(0.96 0 0); /* Very Light Gray */
-  --muted-foreground: oklch(0.5 0 0); /* Medium Gray #737373 */
-  --accent: oklch(0.75 0.12 75); /* Yellow accent */
-  --accent-foreground: oklch(0.15 0 0); /* Dark text */
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(1 0 0);
-  --border: oklch(0.93 0 0); /* Light border #e5e7eb */
+  --secondary: oklch(0.65 0.02 220); /* Gunmetal #2B3A45 */
+  --secondary-foreground: oklch(0.9 0.02 220); /* Glacier #D8E2EA */
+  --muted: oklch(0.9 0.02 220); /* Glacier #D8E2EA */
+  --muted-foreground: oklch(0.5 0.02 220); /* Graphite #1F2A33 */
+  --accent: oklch(0.5 0.15 260); /* Construct Cobalt */
+  --accent-foreground: oklch(1 0 0); /* White */
+  --destructive: oklch(0.55 0.2 25); /* Crimson #C1121F */
+  --destructive-foreground: oklch(1 0 0); /* White */
+  --border: oklch(0.85 0.02 220); /* Silver #A6B3BF */
   --input: oklch(1 0 0); /* White input background */
-  --ring: oklch(0.65 0.15 65 / 0.3); /* Orange focus ring */
-  --chart-1: oklch(0.65 0.15 65); /* Orange */
-  --chart-2: oklch(0.75 0.12 75); /* Yellow */
-  --chart-3: oklch(0.15 0 0); /* Dark Gray */
-  --chart-4: oklch(0.96 0 0); /* Light Gray */
-  --chart-5: oklch(1 0 0); /* White */
-  --radius: 0.375rem; /* Smaller border-radius for cleaner look */
+  --ring: oklch(0.5 0.15 260 / 0.3); /* Cobalt focus ring */
+  --chart-1: oklch(0.5 0.15 260); /* Construct Cobalt */
+  --chart-2: oklch(0.6 0.12 180); /* Clean Aqua Teal */
+  --chart-3: oklch(0.55 0.2 25); /* Restore Crimson */
+  --chart-4: oklch(0.65 0.02 220); /* Gunmetal */
+  --chart-5: oklch(0.9 0.02 220); /* Glacier */
+  --radius: 0.5rem; /* Modern border-radius */
+  
+  /* BaleNet Custom Colors v2 */
+  --bn-steel: #0E1A24;
+  --bn-gunmetal: #2B3A45;
+  --bn-graphite: #1F2A33;
+  --bn-silver: #A6B3BF;
+  --bn-glacier: #D8E2EA;
+  --bn-black: #000000;
+  --bn-white: #FFFFFF;
+  --bn-clean: #33C2B6;
+  --bn-restore: #C1121F;
+  --bn-construct: #2D62F1;
+  --bn-gold: #FFC72C;
+  --bn-success: #16A34A;
+  --bn-info: #0EA5E9;
+  --bn-error: #C1121F;
+  
   --sidebar: oklch(1 0 0); /* White */
-  --sidebar-foreground: oklch(0.15 0 0); /* Very Dark Gray */
-  --sidebar-primary: oklch(0.65 0.15 65); /* Orange */
+  --sidebar-foreground: oklch(0.15 0.02 220); /* Steel Navy */
+  --sidebar-primary: oklch(0.5 0.15 260); /* Construct Cobalt */
   --sidebar-primary-foreground: oklch(1 0 0); /* White */
-  --sidebar-accent: oklch(0.96 0 0); /* Very Light Gray */
-  --sidebar-accent-foreground: oklch(0.15 0 0); /* Very Dark Gray */
-  --sidebar-border: oklch(0.93 0 0); /* Light border */
-  --sidebar-ring: oklch(0.65 0.15 65 / 0.3); /* Orange focus ring */
+  --sidebar-accent: oklch(0.9 0.02 220); /* Glacier */
+  --sidebar-accent-foreground: oklch(0.15 0.02 220); /* Steel Navy */
+  --sidebar-border: oklch(0.85 0.02 220); /* Silver */
+  --sidebar-ring: oklch(0.5 0.15 260 / 0.3); /* Cobalt focus ring */
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.145 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.145 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.75 0 0.12 75); /* Yellow for dark mode */
-  --primary-foreground: oklch(0.145 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.65 0.15 65); /* Orange accent */
-  --accent-foreground: oklch(0.145 0 0);
+  /* Dark mode using BaleNet Steel Navy scheme */
+  --background: oklch(0.15 0.02 220); /* Steel Navy */
+  --foreground: oklch(0.9 0.02 220); /* Glacier */
+  --card: oklch(0.2 0.02 220); /* Gunmetal */
+  --card-foreground: oklch(0.9 0.02 220); /* Glacier */
+  --popover: oklch(0.2 0.02 220); /* Gunmetal */
+  --popover-foreground: oklch(0.9 0.02 220); /* Glacier */
+  --primary: oklch(0.6 0.15 180); /* Clean Aqua Teal for dark mode */
+  --primary-foreground: oklch(0.15 0.02 220); /* Steel Navy */
+  --secondary: oklch(0.25 0.02 220); /* Darker Gunmetal */
+  --secondary-foreground: oklch(0.85 0.02 220); /* Light Silver */
+  --muted: oklch(0.25 0.02 220); /* Darker Gunmetal */
+  --muted-foreground: oklch(0.7 0.02 220); /* Silver */
+  --accent: oklch(0.6 0.15 180); /* Clean Aqua Teal */
+  --accent-foreground: oklch(0.15 0.02 220); /* Steel Navy */
   --destructive: oklch(0.396 0.141 25.723);
   --destructive-foreground: oklch(0.637 0.237 25.331);
-  --border: oklch(0.269 0 0);
-  --input: oklch(0.269 0 0);
-  --ring: oklch(0.75 0.12 75 / 0.5); /* Yellow focus ring */
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.75 0 0.12 75); /* Yellow */
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(0.269 0 0);
-  --sidebar-ring: oklch(0.439 0 0);
+  --border: oklch(0.3 0.02 220); /* Dark Silver */
+  --input: oklch(0.25 0.02 220); /* Darker Gunmetal */
+  --ring: oklch(0.6 0.15 180 / 0.5); /* Clean Aqua Teal focus ring */
+  --chart-1: oklch(0.6 0.15 180); /* Clean Aqua Teal */
+  --chart-2: oklch(0.55 0.2 25); /* Restore Crimson */
+  --chart-3: oklch(0.5 0.15 260); /* Construct Cobalt */
+  --chart-4: oklch(0.65 0.02 220); /* Gunmetal */
+  --chart-5: oklch(0.7 0.02 220); /* Silver */
+  --sidebar: oklch(0.2 0.02 220); /* Gunmetal */
+  --sidebar-foreground: oklch(0.9 0.02 220); /* Glacier */
+  --sidebar-primary: oklch(0.6 0.15 180); /* Clean Aqua Teal */
+  --sidebar-primary-foreground: oklch(0.15 0.02 220); /* Steel Navy */
+  --sidebar-accent: oklch(0.25 0.02 220); /* Darker Gunmetal */
+  --sidebar-accent-foreground: oklch(0.9 0.02 220); /* Glacier */
+  --sidebar-border: oklch(0.3 0.02 220); /* Dark Silver */
+  --sidebar-ring: oklch(0.6 0.15 180 / 0.3); /* Clean Aqua Teal focus ring */
 }
 
 @theme inline {
@@ -201,4 +219,42 @@
     min-height: 44px;
     padding: 8px 12px;
   }
+
+  /* BaleNet Custom Utility Classes */
+  .bg-bn-steel { background-color: var(--bn-steel); }
+  .bg-bn-gunmetal { background-color: var(--bn-gunmetal); }
+  .bg-bn-graphite { background-color: var(--bn-graphite); }
+  .bg-bn-silver { background-color: var(--bn-silver); }
+  .bg-bn-glacier { background-color: var(--bn-glacier); }
+  .bg-bn-black { background-color: var(--bn-black); }
+  .bg-bn-white { background-color: var(--bn-white); }
+  .bg-bn-clean { background-color: var(--bn-clean); }
+  .bg-bn-restore { background-color: var(--bn-restore); }
+  .bg-bn-construct { background-color: var(--bn-construct); }
+  .bg-bn-gold { background-color: var(--bn-gold); }
+  
+  .text-bn-steel { color: var(--bn-steel); }
+  .text-bn-gunmetal { color: var(--bn-gunmetal); }
+  .text-bn-graphite { color: var(--bn-graphite); }
+  .text-bn-silver { color: var(--bn-silver); }
+  .text-bn-glacier { color: var(--bn-glacier); }
+  .text-bn-black { color: var(--bn-black); }
+  .text-bn-white { color: var(--bn-white); }
+  .text-bn-clean { color: var(--bn-clean); }
+  .text-bn-restore { color: var(--bn-restore); }
+  .text-bn-construct { color: var(--bn-construct); }
+  .text-bn-gold { color: var(--bn-gold); }
+  
+  .border-bn-steel { border-color: var(--bn-steel); }
+  .border-bn-gunmetal { border-color: var(--bn-gunmetal); }
+  .border-bn-silver { border-color: var(--bn-silver); }
+  .border-bn-clean { border-color: var(--bn-clean); }
+  .border-bn-restore { border-color: var(--bn-restore); }
+  .border-bn-construct { border-color: var(--bn-construct); }
+  .border-bn-gold { border-color: var(--bn-gold); }
+  
+  .hover\:bg-bn-construct:hover { background-color: var(--bn-construct); }
+  .hover\:bg-bn-restore:hover { background-color: var(--bn-restore); }
+  .hover\:bg-bn-clean:hover { background-color: var(--bn-clean); }
+  .hover\:text-bn-gold:hover { color: var(--bn-gold); }
 }
