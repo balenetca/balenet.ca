@@ -37,11 +37,11 @@ export function WhyChooseUs() {
   ]
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-bn-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-balance">{t("whyChoose.title")}</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
+          <h2 className="text-3xl md:text-4xl font-bold text-bn-steel mb-4 text-balance">{t("whyChoose.title")}</h2>
+          <p className="text-lg text-bn-graphite max-w-2xl mx-auto text-pretty">
             {t("whyChoose.subtitle")}
           </p>
         </div>
@@ -53,18 +53,18 @@ export function WhyChooseUs() {
               if (index === 3) {
                 return (
                   <div key="centered-cards" className="lg:col-span-3 lg:flex lg:justify-center lg:gap-6">
-                    <Card className="bg-card border-border hover:shadow-lg transition-shadow lg:w-80">
+                    <Card className="bg-bn-white border-bn-silver hover:shadow-lg transition-shadow lg:w-80">
                       <CardContent className="p-6 text-center">
-                        {React.createElement(features[index].icon, { className: "h-12 w-12 text-primary mx-auto mb-4" })}
-                        <h3 className="text-xl font-semibold text-foreground mb-2">{features[index].title}</h3>
-                        <p className="text-muted-foreground text-pretty">{features[index].description}</p>
+                        {React.createElement(features[index].icon, { className: "h-12 w-12 text-bn-construct mx-auto mb-4" })}
+                        <h3 className="text-xl font-semibold text-bn-steel mb-2">{features[index].title}</h3>
+                        <p className="text-bn-graphite text-pretty">{features[index].description}</p>
                       </CardContent>
                     </Card>
-                    <Card className="bg-card border-border hover:shadow-lg transition-shadow lg:w-80">
+                    <Card className="bg-bn-white border-bn-silver hover:shadow-lg transition-shadow lg:w-80">
                       <CardContent className="p-6 text-center">
-                        {React.createElement(features[index + 1].icon, { className: "h-12 w-12 text-primary mx-auto mb-4" })}
-                        <h3 className="text-xl font-semibold text-foreground mb-2">{features[index + 1].title}</h3>
-                        <p className="text-muted-foreground text-pretty">{features[index + 1].description}</p>
+                        {React.createElement(features[index + 1].icon, { className: "h-12 w-12 text-bn-construct mx-auto mb-4" })}
+                        <h3 className="text-xl font-semibold text-bn-steel mb-2">{features[index + 1].title}</h3>
+                        <p className="text-bn-graphite text-pretty">{features[index + 1].description}</p>
                       </CardContent>
                     </Card>
                   </div>
@@ -75,11 +75,11 @@ export function WhyChooseUs() {
               
               // Render the first three cards normally
               return (
-                <Card key={index} className="bg-card border-border hover:shadow-lg transition-shadow">
+                <Card key={index} className="bg-bn-white border-bn-silver hover:shadow-lg transition-shadow">
                   <CardContent className="p-6 text-center">
-                    <feature.icon className="h-12 w-12 text-primary mx-auto mb-4" />
-                    <h3 className="text-xl font-semibold text-foreground mb-2">{feature.title}</h3>
-                    <p className="text-muted-foreground text-pretty">{feature.description}</p>
+                    <feature.icon className="h-12 w-12 text-bn-construct mx-auto mb-4" />
+                    <h3 className="text-xl font-semibold text-bn-steel mb-2">{feature.title}</h3>
+                    <p className="text-bn-graphite text-pretty">{feature.description}</p>
                   </CardContent>
                 </Card>
               )

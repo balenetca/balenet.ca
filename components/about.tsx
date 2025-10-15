@@ -8,34 +8,34 @@ export function About() {
   const { t } = useLanguage()
 
   return (
-    <section id="about" className="py-20 bg-muted">
+    <section id="about" className="py-20 bg-bn-glacier">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-balance">{t("about.title")}</h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty">{t("about.description")}</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-bn-steel mb-4 text-balance">{t("about.title")}</h2>
+          <p className="text-lg text-bn-graphite max-w-3xl mx-auto text-pretty">{t("about.description")}</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
-          <Card className="bg-background border-border">
+          <Card className="bg-bn-white border-bn-silver">
             <CardContent className="p-6">
-              <h3 className="text-xl font-semibold text-foreground mb-3">{t("about.mission.title")}</h3>
-              <p className="text-muted-foreground text-pretty">{t("about.mission")}</p>
+              <h3 className="text-xl font-semibold text-bn-steel mb-3">{t("about.mission.title")}</h3>
+              <p className="text-bn-graphite text-pretty">{t("about.mission")}</p>
             </CardContent>
           </Card>
 
-          <Card className="bg-background border-border">
+          <Card className="bg-bn-white border-bn-silver">
             <CardContent className="p-6">
-              <h3 className="text-xl font-semibold text-foreground mb-3">{t("about.vision.title")}</h3>
-              <p className="text-muted-foreground text-pretty">
+              <h3 className="text-xl font-semibold text-bn-steel mb-3">{t("about.vision.title")}</h3>
+              <p className="text-bn-graphite text-pretty">
                 {t("about.vision.description")}
               </p>
             </CardContent>
           </Card>
 
-          <Card className="bg-background border-border">
+          <Card className="bg-bn-white border-bn-silver">
             <CardContent className="p-6">
-              <h3 className="text-xl font-semibold text-foreground mb-3">{t("about.coverage.title")}</h3>
-              <p className="text-muted-foreground text-pretty">
+              <h3 className="text-xl font-semibold text-bn-steel mb-3">{t("about.coverage.title")}</h3>
+              <p className="text-bn-graphite text-pretty">
                 {t("about.coverage.description")}
               </p>
             </CardContent>
@@ -44,11 +44,11 @@ export function About() {
 
         {/* Service Areas Section */}
         <div className="mt-16">
-          <Card className="bg-background border-border">
+          <Card className="bg-bn-white border-bn-silver">
             <CardContent className="p-6">
               <div className="text-center">
-                <h3 className="text-xl font-semibold text-foreground mb-3">{t("about.serviceAreas.title")}</h3>
-                <p className="text-muted-foreground text-pretty">{t("about.serviceAreas.description")}</p>
+                <h3 className="text-xl font-semibold text-bn-steel mb-3">{t("about.serviceAreas.title")}</h3>
+                <p className="text-bn-graphite text-pretty">{t("about.serviceAreas.description")}</p>
               </div>
             </CardContent>
           </Card>

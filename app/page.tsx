@@ -1,6 +1,7 @@
 import { Header } from "@/components/header"
 import { Hero } from "@/components/hero"
 import { Services } from "@/components/services"
+import { TrustBadges } from "@/components/trust-badges"
 import { About } from "@/components/about"
 import { WhyChooseUs } from "@/components/why-choose-us"
 import { Testimonials } from "@/components/testimonials"
@@ -10,8 +11,8 @@ import { Metadata } from "next"
 
 export const metadata: Metadata = {
   // Updated homepage metadata
-  title: "BALE•NET - Construction Cleaning Services | Ottawa, Gatineau",
-  description: "Professional construction cleaning and debris removal services in Ottawa, Gatineau, and surrounding areas. Free quotes available 24/7.",
+  title: "BaleNet Group - Where Vision Becomes Reality | Clean, Restore, Construct",
+  description: "BaleNet Group delivers Clean, Restore, and Construct services across Ottawa, Gatineau, and surrounding areas. Vision becomes reality through innovation-first solutions. Free quotes available 24/7.",
   keywords: [
     "construction cleaning Ottawa",
     "post construction cleanup Gatineau",
@@ -33,8 +34,8 @@ export const metadata: Metadata = {
     "deep cleaning construction",
     "construction waste removal",
     "site cleanup services",
-    "BALENET",
-    "BALE•NET"
+    "BaleNet Group",
+    "Vision becomes reality"
   ],
 }
 
@@ -167,6 +168,7 @@ export default function HomePage() {
           <section id="services">
             <Services />
           </section>
+          <TrustBadges />
           <section id="about">
             <About />
             <WhyChooseUs />

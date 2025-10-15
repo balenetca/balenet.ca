@@ -26,26 +26,26 @@ export function Testimonials() {
   ]
 
   return (
-    <section className="py-20 bg-muted">
+    <section className="py-20 bg-bn-steel">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-balance">{t("testimonials.title")}</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
+          <h2 className="text-3xl md:text-4xl font-bold text-bn-white mb-4 text-balance">{t("testimonials.title")}</h2>
+          <p className="text-lg text-bn-glacier max-w-2xl mx-auto text-pretty">
             {t("testimonials.subtitle")}
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="bg-background border-border">
+            <Card key={index} className="bg-bn-white border-bn-silver">
               <CardContent className="p-6">
                 <div className="flex gap-1 mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 fill-primary text-primary" />
+                    <Star key={i} className="h-5 w-5 fill-bn-gold text-bn-gold" />
                   ))}
                 </div>
-                <blockquote className="text-muted-foreground mb-4 text-pretty">"{testimonial.quote}"</blockquote>
-                <cite className="text-sm font-medium text-foreground">{testimonial.author}</cite>
+                <blockquote className="text-bn-graphite mb-4 text-pretty">"{testimonial.quote}"</blockquote>
+                <cite className="text-sm font-medium text-bn-steel">{testimonial.author}</cite>
               </CardContent>
             </Card>
           ))}

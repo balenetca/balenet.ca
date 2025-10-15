@@ -4,75 +4,93 @@
 @custom-variant dark (&:is(.dark *));
 
   :root {
-    /* Updated color tokens to match BALENET logo orange/yellow and black scheme - Modified */
-  --background: oklch(1 0 0); /* Pure White */
-  --foreground: oklch(0.15 0 0); /* Very Dark Gray/Black #262626 */
-  --card: oklch(1 0 0); /* White cards */
-  --card-foreground: oklch(0.15 0 0); /* Very Dark Gray */
-  --popover: oklch(1 0 0); /* White */
-  --popover-foreground: oklch(0.15 0 0); /* Very Dark Gray */
-  --primary: oklch(0.65 0.15 65); /* Orange from logo #ea580c */
-  --primary-foreground: oklch(1 0 0); /* White */
-  --secondary: oklch(0.75 0.12 75); /* Yellow from logo #eab308 */
-  --secondary-foreground: oklch(0.15 0 0); /* Dark text on yellow */
-  --muted: oklch(0.96 0 0); /* Very Light Gray */
-  --muted-foreground: oklch(0.5 0 0); /* Medium Gray #737373 */
-  --accent: oklch(0.75 0.12 75); /* Yellow accent */
-  --accent-foreground: oklch(0.15 0 0); /* Dark text */
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(1 0 0);
-  --border: oklch(0.93 0 0); /* Light border #e5e7eb */
-  --input: oklch(1 0 0); /* White input background */
-  --ring: oklch(0.65 0.15 65 / 0.3); /* Orange focus ring */
-  --chart-1: oklch(0.65 0.15 65); /* Orange */
-  --chart-2: oklch(0.75 0.12 75); /* Yellow */
-  --chart-3: oklch(0.15 0 0); /* Dark Gray */
-  --chart-4: oklch(0.96 0 0); /* Light Gray */
-  --chart-5: oklch(1 0 0); /* White */
-  --radius: 0.375rem; /* Smaller border-radius for cleaner look */
-  --sidebar: oklch(1 0 0); /* White */
-  --sidebar-foreground: oklch(0.15 0 0); /* Very Dark Gray */
-  --sidebar-primary: oklch(0.65 0.15 65); /* Orange */
-  --sidebar-primary-foreground: oklch(1 0 0); /* White */
-  --sidebar-accent: oklch(0.96 0 0); /* Very Light Gray */
-  --sidebar-accent-foreground: oklch(0.15 0 0); /* Very Dark Gray */
-  --sidebar-border: oklch(0.93 0 0); /* Light border */
-  --sidebar-ring: oklch(0.65 0.15 65 / 0.3); /* Orange focus ring */
-}
+    /* BaleNet Group Color System - Steel Navy base with pillar accents */
+    
+    /* Core Foundation */
+    --bn-steel: #0E1A24; /* Steel Navy - primary background */
+    --bn-gunmetal: #2B3A45; /* Gunmetal - cards, secondary backgrounds */
+    --bn-graphite: #1F2A33; /* Graphite - body text on light, borders on dark */
+    --bn-silver: #A6B3BF; /* Silver - UI chrome, icons, lines */
+    --bn-glacier: #D8E2EA; /* Glacier - light backgrounds, sections */
+    
+    /* Required Neutrals */
+    --bn-black: #000000; /* Black - hero overlays, high-impact headlines */
+    --bn-white: #FFFFFF; /* White - text on dark, light surfaces */
+    
+    /* Pillar Accents */
+    --bn-clean: #33C2B6; /* Aqua Teal - Clean pillar */
+    --bn-restore: #C1121F; /* Crimson - Restore pillar */
+    --bn-construct: #2D62F1; /* Cobalt - Construct pillar */
+    
+    /* Premium Highlight */
+    --bn-gold: #FFC72C; /* Gold Yellow - "Vision becomes reality" marks, badges */
+    
+    /* Utility States */
+    --bn-success: #16A34A; /* Success Green */
+    --bn-info: #0EA5E9; /* Info Sky */
+    --bn-error: #C1121F; /* Error/Emergency - same as Restore */
+    --bn-amber: #FFC72C; /* Warning/Attention - Gold */
+    
+    /* Standard CSS Variables */
+    --background: var(--bn-white);
+    --foreground: var(--bn-steel);
+    --card: var(--bn-white);
+    --card-foreground: var(--bn-steel);
+    --popover: var(--bn-white);
+    --popover-foreground: var(--bn-steel);
+    --primary: var(--bn-construct);
+    --primary-foreground: var(--bn-white);
+    --secondary: var(--bn-gunmetal);
+    --secondary-foreground: var(--bn-white);
+    --muted: var(--bn-glacier);
+    --muted-foreground: var(--bn-graphite);
+    --accent: var(--bn-gold);
+    --accent-foreground: var(--bn-steel);
+    --destructive: var(--bn-error);
+    --destructive-foreground: var(--bn-white);
+    --border: var(--bn-silver);
+    --input: var(--bn-white);
+    --ring: var(--bn-construct);
+    --radius: 0.375rem;
+    --sidebar: var(--bn-white);
+    --sidebar-foreground: var(--bn-steel);
+    --sidebar-primary: var(--bn-construct);
+    --sidebar-primary-foreground: var(--bn-white);
+    --sidebar-accent: var(--bn-glacier);
+    --sidebar-accent-foreground: var(--bn-steel);
+    --sidebar-border: var(--bn-silver);
+    --sidebar-ring: var(--bn-construct);
+  }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.145 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.145 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.75 0 0.12 75); /* Yellow for dark mode */
-  --primary-foreground: oklch(0.145 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.65 0.15 65); /* Orange accent */
-  --accent-foreground: oklch(0.145 0 0);
-  --destructive: oklch(0.396 0.141 25.723);
-  --destructive-foreground: oklch(0.637 0.237 25.331);
-  --border: oklch(0.269 0 0);
-  --input: oklch(0.269 0 0);
-  --ring: oklch(0.75 0.12 75 / 0.5); /* Yellow focus ring */
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.75 0 0.12 75); /* Yellow */
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(0.269 0 0);
-  --sidebar-ring: oklch(0.439 0 0);
+  /* Dark mode using BaleNet color system */
+  --background: var(--bn-steel);
+  --foreground: var(--bn-white);
+  --card: var(--bn-gunmetal);
+  --card-foreground: var(--bn-white);
+  --popover: var(--bn-gunmetal);
+  --popover-foreground: var(--bn-white);
+  --primary: var(--bn-construct);
+  --primary-foreground: var(--bn-white);
+  --secondary: var(--bn-graphite);
+  --secondary-foreground: var(--bn-white);
+  --muted: var(--bn-graphite);
+  --muted-foreground: var(--bn-silver);
+  --accent: var(--bn-gold);
+  --accent-foreground: var(--bn-steel);
+  --destructive: var(--bn-error);
+  --destructive-foreground: var(--bn-white);
+  --border: var(--bn-graphite);
+  --input: var(--bn-graphite);
+  --ring: var(--bn-construct);
+  --sidebar: var(--bn-gunmetal);
+  --sidebar-foreground: var(--bn-white);
+  --sidebar-primary: var(--bn-construct);
+  --sidebar-primary-foreground: var(--bn-white);
+  --sidebar-accent: var(--bn-graphite);
+  --sidebar-accent-foreground: var(--bn-white);
+  --sidebar-border: var(--bn-graphite);
+  --sidebar-ring: var(--bn-construct);
 }
 
 @theme inline {
@@ -123,6 +141,75 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@layer utilities {
+  /* BaleNet Custom Utility Classes */
+  
+  /* Core Foundation Colors */
+  .bg-bn-steel { background-color: var(--bn-steel); }
+  .bg-bn-gunmetal { background-color: var(--bn-gunmetal); }
+  .bg-bn-graphite { background-color: var(--bn-graphite); }
+  .bg-bn-silver { background-color: var(--bn-silver); }
+  .bg-bn-glacier { background-color: var(--bn-glacier); }
+  .bg-bn-black { background-color: var(--bn-black); }
+  .bg-bn-white { background-color: var(--bn-white); }
+  
+  .text-bn-steel { color: var(--bn-steel); }
+  .text-bn-gunmetal { color: var(--bn-gunmetal); }
+  .text-bn-graphite { color: var(--bn-graphite); }
+  .text-bn-silver { color: var(--bn-silver); }
+  .text-bn-glacier { color: var(--bn-glacier); }
+  .text-bn-black { color: var(--bn-black); }
+  .text-bn-white { color: var(--bn-white); }
+  
+  /* Pillar Accent Colors */
+  .bg-bn-clean { background-color: var(--bn-clean); }
+  .bg-bn-restore { background-color: var(--bn-restore); }
+  .bg-bn-construct { background-color: var(--bn-construct); }
+  .bg-bn-gold { background-color: var(--bn-gold); }
+  
+  .text-bn-clean { color: var(--bn-clean); }
+  .text-bn-restore { color: var(--bn-restore); }
+  .text-bn-construct { color: var(--bn-construct); }
+  .text-bn-gold { color: var(--bn-gold); }
+  
+  /* Utility State Colors */
+  .bg-bn-success { background-color: var(--bn-success); }
+  .bg-bn-info { background-color: var(--bn-info); }
+  .bg-bn-error { background-color: var(--bn-error); }
+  .bg-bn-amber { background-color: var(--bn-amber); }
+  
+  .text-bn-success { color: var(--bn-success); }
+  .text-bn-info { color: var(--bn-info); }
+  .text-bn-error { color: var(--bn-error); }
+  .text-bn-amber { color: var(--bn-amber); }
+  
+  /* Border Colors */
+  .border-bn-steel { border-color: var(--bn-steel); }
+  .border-bn-gunmetal { border-color: var(--bn-gunmetal); }
+  .border-bn-graphite { border-color: var(--bn-graphite); }
+  .border-bn-silver { border-color: var(--bn-silver); }
+  .border-bn-clean { border-color: var(--bn-clean); }
+  .border-bn-restore { border-color: var(--bn-restore); }
+  .border-bn-construct { border-color: var(--bn-construct); }
+  .border-bn-gold { border-color: var(--bn-gold); }
+  
+  /* Hover States */
+  .hover\:bg-bn-steel:hover { background-color: var(--bn-steel); }
+  .hover\:bg-bn-gunmetal:hover { background-color: var(--bn-gunmetal); }
+  .hover\:bg-bn-clean:hover { background-color: var(--bn-clean); }
+  .hover\:bg-bn-restore:hover { background-color: var(--bn-restore); }
+  .hover\:bg-bn-construct:hover { background-color: var(--bn-construct); }
+  .hover\:bg-bn-gold:hover { background-color: var(--bn-gold); }
+  
+  .hover\:text-bn-steel:hover { color: var(--bn-steel); }
+  .hover\:text-bn-gunmetal:hover { color: var(--bn-gunmetal); }
+  .hover\:text-bn-clean:hover { color: var(--bn-clean); }
+  .hover\:text-bn-restore:hover { color: var(--bn-restore); }
+  .hover\:text-bn-construct:hover { color: var(--bn-construct); }
+  .hover\:text-bn-gold:hover { color: var(--bn-gold); }
+}
   
   /* WCAG 2.2 Accessibility Enhancements */
   
