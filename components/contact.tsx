@@ -40,32 +40,31 @@ export function Contact() {
           email: formData.email,
           phone: formData.phone,
           message: formData.message,
-          subject: `New Message from BaleNet Group Inc Website - Quote Request from ${formData.name}`,
-          from_name: 'BaleNet Group Inc Website',
+          subject: `New Message from BALE•NET Website - Quote Request from ${formData.name}`,
+          from_name: 'BALE•NET Website',
           replyto: formData.email,
-          to_email: 'info@balenet.ca',
+          to_email: 'info@balenet.com',
           
           // Auto-reply to customer
           auto_reply: true,
-          auto_reply_subject: 'Thank you for contacting BaleNet Group Inc - We\'ll respond within 24 hours',
+          auto_reply_subject: 'Thank you for contacting BALE•NET - We\'ll respond within 24 hours',
           auto_reply_message: `Hi ${formData.name},
 
-Thank you for reaching out to BaleNet Group Inc! We've received your quote request and appreciate your interest in our three-pillar services: Clean, Restore, Construct.
+Thank you for reaching out to BALE•NET! We've received your quote request and appreciate your interest in our professional construction cleaning and debris removal services.
 
 Our team will review your project details and get back to you within 24 hours with a personalized quote.
 
 In the meantime, feel free to visit our website at www.balenet.ca to learn more about our services.
 
 Best regards,
-The BaleNet Group Inc Team
+The BALE•NET Team
 
 📞 (514) 577-8776
-✉️ info@balenet.ca
+✉️ info@balenet.com
 🌐 www.balenet.ca
 
 ---
-BaleNet Group Inc - Where Vision Becomes Reality
-Clean. Restore. Construct. Leading the future through innovation-first solutions.
+BALE•NET Professional Construction Cleaning & Debris Removal
 Serving Ottawa, Carleton, Gatineau, and surrounding areas`
         }),
       })
@@ -168,7 +167,7 @@ Serving Ottawa, Carleton, Gatineau, and surrounding areas`
                     <Mail className="h-8 w-8 text-primary" />
                     <div>
                       <h4 className="font-semibold text-foreground">{t("contact.info.email")}</h4>
-                      <p className="text-muted-foreground">info@balenet.ca</p>
+                      <p className="text-muted-foreground">info@balenet.com</p>
                     </div>
                   </div>
                 </CardContent>

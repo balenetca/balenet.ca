@@ -12,8 +12,8 @@ export function Services() {
     <section id="services" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-bn-steel mb-4 text-balance">{t("services.title")}</h2>
-          <p className="text-lg text-bn-graphite max-w-2xl mx-auto text-pretty">{t("services.subtitle")}</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-balance">{t("services.title")}</h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">{t("services.subtitle")}</p>
         </div>
 
         <div className="mb-16">
@@ -46,138 +46,218 @@ export function Services() {
         </div>
 
         <div className="flex justify-center">
-          <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl">
-            {/* Clean Pillar */}
-            <Card className="bg-bn-glacier border-bn-clean overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="relative h-48 bg-bn-clean/10">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl">
+            <Card className="bg-card border-border overflow-hidden">
+              <div className="relative h-48">
+                <Image
+                  src="/images/debris-containers.jpg"
+                  alt="BALE•NET branded roll-off dumpster at residential construction site"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <CardHeader>
+                <div className="flex items-center gap-3 mb-2">
+                  <Hammer className="h-8 w-8 text-primary" />
+                  <CardTitle className="text-xl">{t("services.debrisRemoval.title")}</CardTitle>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-card-foreground mb-4">{t("services.debrisRemoval.description")}</p>
+                <ul className="space-y-3 text-card-foreground">
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    {t("services.debrisRemoval.bullet1")}
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    {t("services.debrisRemoval.bullet2")}
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    {t("services.debrisRemoval.bullet3")}
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    {t("services.debrisRemoval.bullet4")}
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    {t("services.debrisRemoval.bullet5")}
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-card border-border overflow-hidden">
+              <div className="relative h-48">
                 <Image
                   src="/images/floor-cleaning.jpg"
-                  alt="Clean services - professional floor cleaning"
+                  alt="Professional floor cleaning service"
                   fill
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-bn-clean/20"></div>
               </div>
               <CardHeader>
                 <div className="flex items-center gap-3 mb-2">
-                  <Sparkles className="h-8 w-8 text-bn-clean" />
-                  <CardTitle className="text-xl text-bn-steel">{t("services.clean.title")}</CardTitle>
+                  <Sparkles className="h-8 w-8 text-primary" />
+                  <CardTitle className="text-xl">{t("services.postConstruction.title")}</CardTitle>
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="text-bn-graphite mb-4">{t("services.clean.description")}</p>
-                <ul className="space-y-3 text-bn-graphite">
+                <p className="text-card-foreground mb-4">{t("services.postConstruction.description")}</p>
+                <ul className="space-y-3 text-card-foreground">
                   <li className="flex items-start gap-2">
-                    <span className="text-bn-clean mt-1">•</span>
-                    {t("services.clean.bullet1")}
+                    <span className="text-primary mt-1">•</span>
+                    {t("services.postConstruction.bullet1")}
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-bn-clean mt-1">•</span>
-                    {t("services.clean.bullet2")}
+                    <span className="text-primary mt-1">•</span>
+                    {t("services.postConstruction.bullet2")}
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-bn-clean mt-1">•</span>
-                    {t("services.clean.bullet3")}
+                    <span className="text-primary mt-1">•</span>
+                    {t("services.postConstruction.bullet3")}
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-bn-clean mt-1">•</span>
-                    {t("services.clean.bullet4")}
+                    <span className="text-primary mt-1">•</span>
+                    {t("services.postConstruction.bullet4")}
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-bn-clean mt-1">•</span>
-                    {t("services.clean.bullet5")}
+                    <span className="text-primary mt-1">•</span>
+                    {t("services.postConstruction.bullet5")}
                   </li>
                 </ul>
               </CardContent>
             </Card>
 
-            {/* Restore Pillar */}
-            <Card className="bg-bn-glacier border-bn-restore overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="relative h-48 bg-bn-restore/10">
+            <Card className="bg-card border-border overflow-hidden">
+              <div className="relative h-48">
                 <Image
-                  src="/images/disaster-recovery-cleaning-emergency-response-team.jpg"
-                  alt="Restore services - disaster recovery cleaning"
+                  src="/images/worker-cleaning.jpg"
+                  alt="Deep cleaning and debris removal"
                   fill
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-bn-restore/20"></div>
               </div>
               <CardHeader>
                 <div className="flex items-center gap-3 mb-2">
-                  <Shield className="h-8 w-8 text-bn-restore" />
-                  <CardTitle className="text-xl text-bn-steel">{t("services.restore.title")}</CardTitle>
+                  <Plus className="h-8 w-8 text-primary" />
+                  <CardTitle className="text-xl">{t("services.deepCleaning.title")}</CardTitle>
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="text-bn-graphite mb-4">{t("services.restore.description")}</p>
-                <ul className="space-y-3 text-bn-graphite">
+                <p className="text-card-foreground mb-4">{t("services.deepCleaning.description")}</p>
+                <ul className="space-y-3 text-card-foreground">
                   <li className="flex items-start gap-2">
-                    <span className="text-bn-restore mt-1">•</span>
-                    {t("services.restore.bullet1")}
+                    <span className="text-primary mt-1">•</span>
+                    {t("services.deepCleaning.bullet1")}
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-bn-restore mt-1">•</span>
-                    {t("services.restore.bullet2")}
+                    <span className="text-primary mt-1">•</span>
+                    {t("services.deepCleaning.bullet2")}
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-bn-restore mt-1">•</span>
-                    {t("services.restore.bullet3")}
+                    <span className="text-primary mt-1">•</span>
+                    {t("services.deepCleaning.bullet3")}
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-bn-restore mt-1">•</span>
-                    {t("services.restore.bullet4")}
+                    <span className="text-primary mt-1">•</span>
+                    {t("services.deepCleaning.bullet4")}
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-bn-restore mt-1">•</span>
-                    {t("services.restore.bullet5")}
+                    <span className="text-primary mt-1">•</span>
+                    {t("services.deepCleaning.bullet5")}
                   </li>
                 </ul>
               </CardContent>
             </Card>
 
-            {/* Construct Pillar */}
-            <Card className="bg-bn-glacier border-bn-construct overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="relative h-48 bg-bn-construct/10">
+            <div className="lg:col-span-3 lg:flex lg:justify-center lg:gap-8">
+              <Card className="bg-card border-border overflow-hidden lg:w-80">
+              <div className="relative h-48">
+                <Image
+                  src="/disaster-recovery-cleaning-emergency-response-team.jpg"
+                  alt="Disaster recovery cleaning services"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <CardHeader>
+                <div className="flex items-center gap-3 mb-2">
+                  <Shield className="h-8 w-8 text-primary" />
+                  <CardTitle className="text-xl">{t("services.disasterRecovery.title")}</CardTitle>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-card-foreground mb-4">{t("services.disasterRecovery.description")}</p>
+                <ul className="space-y-3 text-card-foreground">
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    {t("services.disasterRecovery.bullet1")}
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    {t("services.disasterRecovery.bullet2")}
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    {t("services.disasterRecovery.bullet3")}
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    {t("services.disasterRecovery.bullet4")}
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    {t("services.disasterRecovery.bullet5")}
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+              <Card className="bg-card border-border overflow-hidden lg:w-80">
+              <div className="relative h-48">
                 <Image
                   src="/images/demolition-service.jpg"
-                  alt="Construct services - professional demolition and construction"
+                  alt="Professional demolition services"
                   fill
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-bn-construct/20"></div>
               </div>
               <CardHeader>
                 <div className="flex items-center gap-3 mb-2">
-                  <Wrench className="h-8 w-8 text-bn-construct" />
-                  <CardTitle className="text-xl text-bn-steel">{t("services.construct.title")}</CardTitle>
+                  <Wrench className="h-8 w-8 text-primary" />
+                  <CardTitle className="text-xl">{t("services.demolition.title")}</CardTitle>
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="text-bn-graphite mb-4">{t("services.construct.description")}</p>
-                <ul className="space-y-3 text-bn-graphite">
+                <p className="text-card-foreground mb-4">{t("services.demolition.description")}</p>
+                <ul className="space-y-3 text-card-foreground">
                   <li className="flex items-start gap-2">
-                    <span className="text-bn-construct mt-1">•</span>
-                    {t("services.construct.bullet1")}
+                    <span className="text-primary mt-1">•</span>
+                    {t("services.demolition.bullet1")}
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-bn-construct mt-1">•</span>
-                    {t("services.construct.bullet2")}
+                    <span className="text-primary mt-1">•</span>
+                    {t("services.demolition.bullet2")}
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-bn-construct mt-1">•</span>
-                    {t("services.construct.bullet3")}
+                    <span className="text-primary mt-1">•</span>
+                    {t("services.demolition.bullet3")}
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-bn-construct mt-1">•</span>
-                    {t("services.construct.bullet4")}
+                    <span className="text-primary mt-1">•</span>
+                    {t("services.demolition.bullet4")}
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-bn-construct mt-1">•</span>
-                    {t("services.construct.bullet5")}
+                    <span className="text-primary mt-1">•</span>
+                    {t("services.demolition.bullet5")}
                   </li>
                 </ul>
               </CardContent>
-            </Card>
+              </Card>
+            </div>
           </div>
         </div>
       </div>

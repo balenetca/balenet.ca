@@ -7,38 +7,38 @@ export function Footer() {
   const { t } = useLanguage()
 
   return (
-    <footer className="bg-bn-steel border-t border-bn-silver py-12">
+    <footer className="bg-muted border-t border-border py-12">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <Sparkles className="h-6 w-6 text-bn-gold" />
-              <span className="text-xl font-bold text-bn-white">BaleNet Group Inc</span>
+              <Sparkles className="h-6 w-6 text-primary" />
+              <span className="text-xl font-bold text-foreground">BALE•NET</span>
             </div>
-            <p className="text-bn-glacier mb-4 text-pretty">{t("footer.description")}</p>
-            <p className="text-sm text-bn-silver">© 2024 BaleNet Group Inc. {t("footer.rights")}</p>
+            <p className="text-muted-foreground mb-4 text-pretty">{t("footer.description")}</p>
+            <p className="text-sm text-muted-foreground">© 2024 BALE•NET. {t("footer.rights")}</p>
           </div>
 
           <div>
-            <h4 className="font-semibold text-bn-white mb-4">{t("footer.links.title")}</h4>
+            <h4 className="font-semibold text-foreground mb-4">{t("footer.links.title")}</h4>
             <ul className="space-y-2">
               <li>
-                <a href="/en#home" className="text-bn-silver hover:text-bn-gold transition-colors">
+                <a href="/en#home" className="text-muted-foreground hover:text-primary transition-colors">
                   {t("nav.home")}
                 </a>
               </li>
               <li>
-                <a href="/en#services" className="text-bn-silver hover:text-bn-clean transition-colors">
+                <a href="/en#services" className="text-muted-foreground hover:text-primary transition-colors">
                   {t("nav.services")}
                 </a>
               </li>
               <li>
-                <a href="/en#about" className="text-bn-silver hover:text-bn-restore transition-colors">
+                <a href="/en#about" className="text-muted-foreground hover:text-primary transition-colors">
                   {t("nav.about")}
                 </a>
               </li>
               <li>
-                <a href="/en#contact" className="text-bn-silver hover:text-bn-construct transition-colors">
+                <a href="/en#contact" className="text-muted-foreground hover:text-primary transition-colors">
                   {t("nav.contact")}
                 </a>
               </li>
@@ -46,44 +46,49 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-bn-white mb-4">{t("footer.services.title")}</h4>
+            <h4 className="font-semibold text-foreground mb-4">{t("footer.services.title")}</h4>
             <ul className="space-y-2">
               <li>
-                <a href="/en#services" className="text-bn-silver hover:text-bn-clean transition-colors">
-                  {t("services.clean.title")}
+                <a href="/en#services" className="text-muted-foreground hover:text-primary transition-colors">
+                  {t("services.postConstruction.title")}
                 </a>
               </li>
               <li>
-                <a href="/en#services" className="text-bn-silver hover:text-bn-restore transition-colors">
-                  {t("services.restore.title")}
+                <a href="/en#services" className="text-muted-foreground hover:text-primary transition-colors">
+                  {t("services.debrisRemoval.title")}
                 </a>
               </li>
               <li>
-                <a href="/en#services" className="text-bn-silver hover:text-bn-construct transition-colors">
-                  {t("services.construct.title")}
+                <a href="/en#services" className="text-muted-foreground hover:text-primary transition-colors">
+                  {t("services.deepCleaning.title")}
+                </a>
+              </li>
+              <li>
+                <a href="/en#services" className="text-muted-foreground hover:text-primary transition-colors">
+                  {t("services.demolition.title")}
                 </a>
               </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold text-bn-white mb-4">{t("footer.contact.title")}</h4>
+            <h4 className="font-semibold text-foreground mb-4">{t("footer.contact.title")}</h4>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
-                <Phone className="h-4 w-4 text-bn-gold" />
-                <a href="tel:+15145778776" className="text-bn-silver hover:text-bn-gold transition-colors">(514) 577-8776</a>
+                <Phone className="h-4 w-4 text-primary" />
+                <a href="tel:+15145778776" className="text-muted-foreground hover:text-primary transition-colors">(514) 577-8776</a>
               </div>
               <div className="flex items-center space-x-3">
-                <Mail className="h-4 w-4 text-bn-gold" />
-                <a href="mailto:info@balenet.ca" className="text-bn-silver hover:text-bn-gold transition-colors">info@balenet.ca</a>
+                <Mail className="h-4 w-4 text-primary" />
+                <a href="mailto:info@balenet.com" className="text-muted-foreground hover:text-primary transition-colors">info@balenet.com</a>
               </div>
               <div className="flex items-center space-x-3">
-                <MapPin className="h-4 w-4 text-bn-gold" />
-                <span className="text-bn-silver">{t("contact.info.locationValue")}</span>
+                <MapPin className="h-4 w-4 text-primary" />
+                <span className="text-muted-foreground">{t("contact.info.locationValue")}</span>
               </div>
               <div className="flex items-center space-x-3">
-                <Clock className="h-4 w-4 text-bn-gold" />
-                <span className="text-bn-silver">{t("contact.info.availability")}</span>
+                <Clock className="h-4 w-4 text-primary" />
+                <span className="text-muted-foreground">{t("contact.info.availability")}</span>
               </div>
             </div>
           </div>

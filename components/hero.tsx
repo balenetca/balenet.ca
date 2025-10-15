@@ -35,21 +35,21 @@ export function Hero() {
 
           <div className="flex-1 text-center lg:text-left order-1 lg:order-2">
             <div className="flex items-center justify-center lg:justify-start gap-2 mb-4">
-              <Sparkles className="h-5 w-5 md:h-6 md:w-6 text-bn-gold" />
-              <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold text-bn-black text-balance tracking-tight">
+              <Sparkles className="h-5 w-5 md:h-6 md:w-6 text-yellow-500" />
+              <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold text-foreground text-balance tracking-tight">
                 {t("hero.title")}
               </h1>
-              <Sparkles className="h-5 w-5 md:h-6 md:w-6 text-bn-gold" />
+              <Sparkles className="h-5 w-5 md:h-6 md:w-6 text-yellow-500" />
             </div>
 
-            <p className="text-lg md:text-xl lg:text-2xl text-bn-graphite mb-6 lg:mb-8 text-pretty font-light leading-relaxed">
+            <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground mb-6 lg:mb-8 text-pretty font-light leading-relaxed">
               {t("hero.subtitle")}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 lg:gap-4 mb-8 lg:mb-12">
               <Button
                 size="lg"
-                className="bg-bn-construct text-bn-white hover:bg-bn-construct/90 text-base lg:text-lg px-6 lg:px-8 py-3 lg:py-4 rounded-md"
+                className="bg-primary text-primary-foreground hover:bg-primary/90 text-base lg:text-lg px-6 lg:px-8 py-3 lg:py-4 rounded-md"
                 asChild
               >
                 <a href="/en#contact">
@@ -60,7 +60,7 @@ export function Hero() {
               <Button 
                 variant="outline" 
                 size="lg" 
-                className="text-base lg:text-lg px-6 lg:px-8 py-3 lg:py-4 rounded-md border-bn-gold text-bn-gold hover:bg-bn-gold hover:text-bn-steel bg-white/80"
+                className="text-base lg:text-lg px-6 lg:px-8 py-3 lg:py-4 rounded-md border-border bg-white/80"
                 asChild
               >
                 <a href="tel:+15145778776">
@@ -71,18 +71,18 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-4xl mx-auto mt-12 lg:mt-16 bg-bn-steel/90 rounded-lg p-6 md:p-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-4xl mx-auto mt-12 lg:mt-16 bg-white/90 rounded-lg p-6 md:p-8">
           <div className="text-center">
-            <h3 className="text-base md:text-lg font-medium text-bn-clean mb-2">{t("hero.pillar1")}</h3>
-            <p className="text-sm md:text-base text-bn-glacier font-light">{t("hero.pillar1.desc")}</p>
+            <h3 className="text-base md:text-lg font-medium text-foreground mb-2">{t("hero.service2")}</h3>
+            <p className="text-sm md:text-base text-muted-foreground font-light">{t("hero.service2.desc")}</p>
           </div>
           <div className="text-center">
-            <h3 className="text-base md:text-lg font-medium text-bn-restore mb-2">{t("hero.pillar2")}</h3>
-            <p className="text-sm md:text-base text-bn-glacier font-light">{t("hero.pillar2.desc")}</p>
+            <h3 className="text-base md:text-lg font-medium text-foreground mb-2">{t("hero.service3")}</h3>
+            <p className="text-sm md:text-base text-muted-foreground font-light">{t("hero.service3.desc")}</p>
           </div>
           <div className="text-center">
-            <h3 className="text-base md:text-lg font-medium text-bn-construct mb-2">{t("hero.pillar3")}</h3>
-            <p className="text-sm md:text-base text-bn-glacier font-light">{t("hero.pillar3.desc")}</p>
+            <h3 className="text-base md:text-lg font-medium text-foreground mb-2">{t("hero.service1")}</h3>
+            <p className="text-sm md:text-base text-muted-foreground font-light">{t("hero.service1.desc")}</p>
           </div>
         </div>
       </div>

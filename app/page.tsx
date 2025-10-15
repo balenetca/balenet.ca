@@ -9,8 +9,8 @@ import { Footer } from "@/components/footer"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "BaleNet Group Inc - Where Vision Becomes Reality | Clean, Restore, Construct | Ottawa, Gatineau",
-  description: "Vision becomes reality through our three pillars: Clean, Restore, Construct. Leading the future through innovation-first solutions in Ottawa, Gatineau, and surrounding areas.",
+  title: "BALE•NET - Construction Cleaning Services | Ottawa, Gatineau",
+  description: "Professional construction cleaning and debris removal services in Ottawa, Gatineau, and surrounding areas. Free quotes available 24/7.",
   keywords: [
     "construction cleaning Ottawa",
     "post construction cleanup Gatineau",
@@ -44,18 +44,18 @@ export default function HomePage() {
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "What areas does BaleNet Group Inc serve?",
+        "name": "What areas does BALE•NET serve?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "BaleNet Group Inc serves Ottawa, Gatineau, Carleton, Hull, Aylmer, Orleans, Kanata, Nepean, Gloucester, Ottawa South, Barrhaven, Stittsville, and surrounding areas in the National Capital Region."
+          "text": "BALE•NET serves Ottawa, Gatineau, Carleton, Hull, Aylmer, Orleans, Kanata, Nepean, Gloucester, Ottawa South, Barrhaven, Stittsville, and surrounding areas in the National Capital Region."
         }
       },
       {
         "@type": "Question",
-        "name": "What services does BaleNet Group Inc offer?",
+        "name": "What services does BALE•NET offer?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "BaleNet Group Inc offers comprehensive three-pillar services: Clean (janitorial, deep cleaning, floor care), Restore (disaster recovery, mold remediation, water damage), and Construct (demolition, fit-outs, renovations)."
+          "text": "BALE•NET offers comprehensive construction cleaning services including debris removal, post-construction cleanup, deep cleaning, final cleaning, demolition services, and disaster recovery cleaning."
         }
       },
       {
@@ -63,23 +63,23 @@ export default function HomePage() {
         "name": "How do I get a free quote?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "You can get a free quote by calling (514) 577-8776, emailing info@balenet.ca, or filling out our online contact form. We provide detailed estimates for all Clean, Restore, and Construct projects."
+          "text": "You can get a free quote by calling (514) 577-8776, emailing info@balenet.com, or filling out our online contact form. We provide detailed estimates for all construction cleaning projects."
         }
       },
       {
         "@type": "Question",
-        "name": "What are BaleNet Group Inc's operating hours?",
+        "name": "What are BALE•NET's operating hours?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "BaleNet Group Inc operates 7 days a week, 24 hours a day. We provide round-the-clock Clean, Restore, and Construct services to accommodate urgent project needs and tight deadlines."
+          "text": "BALE•NET operates 7 days a week, 24 hours a day. We provide round-the-clock construction cleaning services to accommodate urgent project needs and tight deadlines."
         }
       },
       {
         "@type": "Question",
-        "name": "Does BaleNet Group Inc provide quality guarantees?",
+        "name": "Does BALE•NET provide quality guarantees?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, BaleNet Group Inc provides comprehensive quality guarantees on all services. We ensure every project meets the highest standards with innovation-first approaches and professional expertise across Clean, Restore, and Construct services."
+          "text": "Yes, BALE•NET provides comprehensive quality guarantees on all services. We ensure every construction site is cleaned to the highest standards with attention to detail and professional expertise."
         }
       }
     ]
