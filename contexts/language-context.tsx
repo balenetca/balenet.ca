@@ -37,9 +37,9 @@ const translations = {
     "hero.pillar3.desc": "Vision becomes reality through innovative builds and smart solutions",
 
     // About - Vision becomes reality theme
-    "about.title": "About BaleNet Group Inc",
+    "about.title": "About BaleNet Group",
     "about.description":
-      "BaleNet Group Inc is more than a service provider — we are a partner in the life cycle of your property and assets. With expertise spanning Clean, Restore, and Construct services, we help our clients build, manage, and sustain their investments.",
+      "BaleNet Group is more than a service provider — we are a partner in the life cycle of your property and assets. With expertise spanning Clean, Restore, and Construct services, we help our clients build, manage, and sustain their investments.",
     "about.mission":
       "To be Canada's go-to partner for end-to-end asset services, ensuring every build, facility, and property runs smoothly, sustainably, and profitably. Where Vision Becomes Reality - We lead the future by turning innovative ideas into tangible results.",
     "about.mission.title": "Our Mission",
@@ -114,7 +114,7 @@ const translations = {
     "services.demolition.bullet5": "Permit assistance & compliance",
 
     // Why Choose Us - Vision becomes reality theme
-    "whyChoose.title": "Why Choose BaleNet Group Inc?",
+    "whyChoose.title": "Why Choose BaleNet Group?",
     "whyChoose.subtitle": "Vision becomes reality through our innovation-first approach. We're your trusted partner for Clean, Restore, and Construct services",
     "whyChoose.experienced.title": "Experienced Team",
     "whyChoose.experienced.description":
@@ -186,7 +186,7 @@ const translations = {
 
     // Footer
     "footer.description":
-      "BaleNet Group Inc - Where Vision Becomes Reality. Professional Clean, Restore, and Construct services. Your trusted partner for innovation-first solutions in Ottawa, Gatineau, and surrounding areas.",
+      "BaleNet Group - Where Vision Becomes Reality. Professional Clean, Restore, and Construct services. Your trusted partner for innovation-first solutions in Ottawa, Gatineau, and surrounding areas.",
     "footer.services.title": "Services",
     "footer.contact.title": "Contact",
     "footer.links.title": "Quick Links",
@@ -213,9 +213,9 @@ const translations = {
     "hero.pillar3.desc": "La vision devient réalité grâce à des constructions innovantes et des solutions intelligentes",
 
     // About - Vision devient réalité
-    "about.title": "À propos de BaleNet Group Inc",
+    "about.title": "À propos de BaleNet Group",
     "about.description":
-      "BaleNet Group Inc est plus qu'un fournisseur de services — nous sommes un partenaire dans le cycle de vie de vos biens et actifs. Avec une expertise couvrant les services Nettoyer, Restaurer et Construire, nous aidons nos clients à construire, gérer et maintenir leurs investissements.",
+      "BaleNet Group est plus qu'un fournisseur de services — nous sommes un partenaire dans le cycle de vie de vos biens et actifs. Avec une expertise couvrant les services Nettoyer, Restaurer et Construire, nous aidons nos clients à construire, gérer et maintenir leurs investissements.",
     "about.mission":
       "Être le partenaire de référence du Canada pour les services d'actifs de bout en bout, en veillant à ce que chaque construction, installation et propriété fonctionne en douceur, de manière durable et rentable. Où la Vision Devient Réalité - Nous menons l'avenir en transformant des idées innovantes en résultats tangibles.",
     "about.mission.title": "Notre Mission",

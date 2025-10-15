@@ -14,10 +14,10 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <Sparkles className="h-6 w-6 text-bn-gold" />
-              <span className="text-xl font-bold text-bn-white">BaleNet Group Inc</span>
+              <span className="text-xl font-bold text-bn-white">BaleNet Group</span>
             </div>
             <p className="text-bn-glacier mb-4 text-pretty">{t("footer.description")}</p>
-            <p className="text-sm text-bn-glacier">© 2024 BaleNet Group Inc. {t("footer.rights")}</p>
+            <p className="text-sm text-bn-glacier">© 2024 BaleNet Group. {t("footer.rights")}</p>
           </div>
 
           <div>

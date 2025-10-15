@@ -40,31 +40,31 @@ export function Contact() {
           email: formData.email,
           phone: formData.phone,
           message: formData.message,
-          subject: `New Message from BaleNet Group Inc Website - Quote Request from ${formData.name}`,
-          from_name: 'BaleNet Group Inc Website',
+          subject: `New Message from BaleNet Group Website - Quote Request from ${formData.name}`,
+          from_name: 'BaleNet Group Website',
           replyto: formData.email,
           to_email: 'info@balenet.ca',
           
           // Auto-reply to customer
           auto_reply: true,
-          auto_reply_subject: 'Thank you for contacting BaleNet Group Inc - We\'ll respond within 24 hours',
+          auto_reply_subject: 'Thank you for contacting BaleNet Group - We\'ll respond within 24 hours',
           auto_reply_message: `Hi ${formData.name},
 
-Thank you for reaching out to BaleNet Group Inc! We've received your quote request and appreciate your interest in our Clean, Restore, and Construct services.
+Thank you for reaching out to BaleNet Group! We've received your quote request and appreciate your interest in our Clean, Restore, and Construct services.
 
 Our team will review your project details and get back to you within 24 hours with a personalized quote.
 
 In the meantime, feel free to visit our website at www.balenet.ca to learn more about how Vision becomes reality through our three pillars.
 
 Best regards,
-The BaleNet Group Inc Team
+The BaleNet Group Team
 
 📞 (514) 577-8776
 ✉️ info@balenet.ca
 🌐 www.balenet.ca
 
 ---
-BaleNet Group Inc - Where Vision Becomes Reality
+BaleNet Group - Where Vision Becomes Reality
 Clean | Restore | Construct
 Serving Ottawa, Gatineau, and surrounding areas`
         }),

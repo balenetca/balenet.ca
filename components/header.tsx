@@ -24,12 +24,12 @@ export function Header() {
         <div className="flex items-center gap-2 md:gap-4">
           <Image 
             src="/images/balenet-logo.png" 
-            alt="BaleNet Group Inc Logo" 
+            alt="BaleNet Group Logo" 
             width={60} 
             height={60} 
             className="h-12 w-12 md:h-20 md:w-20" 
           />
-          <span className="text-xl md:text-3xl font-bold text-bn-steel">BaleNet Group Inc</span>
+          <span className="text-xl md:text-3xl font-bold text-bn-steel">BaleNet Group</span>
         </div>
 
         {/* Desktop Navigation */}

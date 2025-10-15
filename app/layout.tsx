@@ -8,11 +8,11 @@ import { LanguageProvider } from "@/contexts/language-context"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "BaleNet Group Inc - Where Vision Becomes Reality | Clean, Restore, Construct",
+  title: "BaleNet Group - Where Vision Becomes Reality | Clean, Restore, Construct",
   description:
-    "BaleNet Group Inc delivers Clean, Restore, and Construct services across Ottawa, Gatineau, and surrounding areas. Vision becomes reality through innovation-first solutions. Free quotes available 24/7.",
+    "BaleNet Group delivers Clean, Restore, and Construct services across Ottawa, Gatineau, and surrounding areas. Vision becomes reality through innovation-first solutions. Free quotes available 24/7.",
   keywords: [
-    "BaleNet Group Inc",
+    "BaleNet Group",
     "Vision becomes reality",
     "Clean services Ottawa",
     "Restore services Gatineau",

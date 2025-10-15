@@ -26,7 +26,7 @@ export function Hero() {
           <div className="flex-shrink-0 order-2 lg:order-1">
             <Image
               src="/images/balenet-logo.png"
-              alt="BaleNet Group Inc Logo"
+              alt="BaleNet Group Logo"
               width={200}
               height={200}
               className="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80"
