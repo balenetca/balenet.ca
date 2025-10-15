@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 export default function RestaurerPage() {
   const restoreServices = [
     {
-      title: "Nettoyage Dé 데s d'Eau et Inondation",
+      title: "Nettoyage Dégâts d'Eau et Inondation",
       description: "Restauration rapide des dégâts d'eau avec équipement de séchage avancé et prévention de moisissures.",
       features: ["Réponse d'urgence 24/7", "Extraction d'eau", "Séchage structural", "Prévention moisissures"]
     },

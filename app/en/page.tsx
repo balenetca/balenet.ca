@@ -1,16 +1,18 @@
 import { Header } from "@/components/header"
 import { Hero } from "@/components/hero"
 import { Services } from "@/components/services"
+import { TrustBadges } from "@/components/trust-badges"
 import { About } from "@/components/about"
 import { WhyChooseUs } from "@/components/why-choose-us"
 import { Testimonials } from "@/components/testimonials"
 import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
+import { LanguageProvider } from "@/contexts/language-context"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "BALE•NET - Construction Cleaning Services | Ottawa, Gatineau",
-  description: "Professional construction cleaning and debris removal services in Ottawa, Gatineau, Carleton, Hull, Aylmer, Orleans, Kanata, Nepean, Gloucester, Ottawa South, Barrhaven, and Stittsville. Free quotes available 24/7.",
+  title: "BaleNet Group - Where Vision Becomes Reality | Clean, Restore, Construct",
+  description: "BaleNet Group delivers Clean, Restore, and Construct services across Ottawa, Gatineau, and surrounding areas. Vision becomes reality through innovation-first solutions. Free quotes available 24/7.",
   alternates: {
     canonical: "https://balenet.ca/en",
     languages: {
@@ -22,25 +24,28 @@ export const metadata: Metadata = {
 
 export default function EnglishPage() {
   return (
-    <div className="min-h-screen">
-      <Header />
-      <main id="main-content">
-        <section id="home">
-          <Hero />
-        </section>
-        <section id="services">
-          <Services />
-        </section>
-        <section id="about">
-          <About />
-          <WhyChooseUs />
-          <Testimonials />
-        </section>
-        <section id="contact">
-          <Contact />
-        </section>
-      </main>
-      <Footer />
-    </div>
+    <LanguageProvider initialLanguage="en">
+      <div className="min-h-screen">
+        <Header />
+        <main id="main-content">
+          <section id="home">
+            <Hero />
+          </section>
+          <section id="services">
+            <Services />
+          </section>
+          <TrustBadges />
+          <section id="about">
+            <About />
+            <WhyChooseUs />
+            <Testimonials />
+          </section>
+          <section id="contact">
+            <Contact />
+          </section>
+        </main>
+        <Footer />
+      </div>
+    </LanguageProvider>
   )
 }
