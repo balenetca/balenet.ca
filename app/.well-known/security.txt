@@ -1,6 +1,0 @@
-Contact: mailto:info@balenet.com
-Expires: 2025-12-31T23:59:59.000Z
-Encryption: https://balenet.ca/pgp-key.txt
-Preferred-Languages: en, fr
-Canonical: https://balenet.ca/.well-known/security.txt
-Policy: https://balenet.ca/security-policy
