@@ -13,8 +13,8 @@ export function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/construction-site-bg.jpg"
-          alt="Construction site background"
+          src="/images/hero/construction-hero-bg.jpg"
+          alt="Professional construction site with modern equipment and workers in safety gear"
           fill
           className="object-cover opacity-40"
           priority
@@ -86,13 +86,13 @@ export function Hero() {
           {/* Right Content - Image */}
           <div className="relative">
             <div className="relative rounded-lg overflow-hidden shadow-2xl">
-              <Image
-                src="/images/team-cleaning.jpg"
-                alt="BaleNet Group professional team"
-                width={600}
-                height={400}
-                className="w-full h-96 object-cover"
-              />
+            <Image
+              src="/images/about/professional-team-portrait.jpg"
+              alt="BaleNet Group professional construction and cleanup team"
+              width={600}
+              height={400}
+              className="w-full h-96 object-cover"
+            />
               <div className="absolute inset-0 bg-bn-primary/20"></div>
             </div>
             

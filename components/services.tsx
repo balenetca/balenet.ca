@@ -13,7 +13,7 @@ export function Services() {
       icon: <Sparkles className="h-8 w-8 text-bn-primary" />,
       title: "Clean Services",
       description: "Professional cleaning services including daily janitorial, deep cleaning, floor care, and post-construction cleanup.",
-      image: "/images/floor-cleaning.jpg",
+      image: "/images/services/professional-cleaning-team.jpg",
       features: [
         "Daily & nightly janitorial services",
         "Deep cleaning & sanitization", 
@@ -27,7 +27,7 @@ export function Services() {
       icon: <Shield className="h-8 w-8 text-bn-blue" />,
       title: "Restore Services", 
       description: "Emergency disaster recovery, water damage cleanup, fire restoration, and mold remediation services.",
-      image: "/images/disaster-recovery-cleaning-emergency-response-team.jpg",
+      image: "/images/services/emergency-restoration-team.jpg",
       features: [
         "Water & flood damage cleanup",
         "Fire & smoke damage restoration",
@@ -41,7 +41,7 @@ export function Services() {
       icon: <Wrench className="h-8 w-8 text-bn-orange" />,
       title: "Construct Services",
       description: "Professional demolition, tenant fit-outs, and renovations with cutting-edge construction methods.",
-      image: "/images/demolition-service.jpg", 
+      image: "/images/services/construction-workers.jpg", 
       features: [
         "Demolition & site preparation",
         "Tenant fit-outs & renovations",

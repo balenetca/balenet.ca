@@ -72,13 +72,13 @@ export function About() {
           {/* Right Content - Image */}
           <div className="relative">
             <div className="relative rounded-lg overflow-hidden shadow-xl">
-              <Image
-                src="/images/team-cleaning.jpg"
-                alt="BaleNet Group professional team"
-                width={600}
-                height={400}
-                className="w-full h-96 object-cover"
-              />
+            <Image
+              src="/images/about/professional-team-portrait.jpg"
+              alt="BaleNet Group professional construction and cleanup team"
+              width={600}
+              height={400}
+              className="w-full h-96 object-cover"
+            />
               <div className="absolute inset-0 bg-bn-primary/20"></div>
             </div>
             

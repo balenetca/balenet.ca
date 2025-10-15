@@ -16,7 +16,7 @@ export function ProjectsGallery() {
       location: "Ottawa, ON",
       duration: "3 Days",
       team: "8 Specialists",
-      image: "/images/before-after.jpg",
+      image: "/images/projects/office-cleanup-project.jpg",
       description: "Complete post-construction cleanup of a 50,000 sq ft office complex including floor finishing, window cleaning, and debris removal."
     },
     {
@@ -26,7 +26,7 @@ export function ProjectsGallery() {
       location: "Gatineau, QC",
       duration: "2 Weeks",
       team: "5 Contractors",
-      image: "/images/worker-cleaning.jpg",
+      image: "/images/projects/residential-renovation.jpg",
       description: "Full kitchen and bathroom renovation including demolition, construction, and final cleanup for a residential property."
     },
     {
@@ -36,7 +36,7 @@ export function ProjectsGallery() {
       location: "Orleans, ON",
       duration: "5 Days",
       team: "6 Technicians",
-      image: "/images/disaster-recovery-cleaning-emergency-response-team.jpg",
+      image: "/images/projects/water-damage-restoration.jpg",
       description: "Emergency water damage restoration and cleanup following a basement flood, including mold remediation and structural drying."
     },
     {
@@ -46,7 +46,7 @@ export function ProjectsGallery() {
       location: "Kanata, ON",
       duration: "3 Weeks",
       team: "12 Specialists",
-      image: "/images/team-cleaning.jpg",
+      image: "/images/projects/commercial-fitout.jpg",
       description: "Complete tenant fit-out for a new medical office including construction, electrical work, and final cleaning."
     },
     {
@@ -56,7 +56,7 @@ export function ProjectsGallery() {
       location: "Nepean, ON",
       duration: "1 Week",
       team: "10 Cleaners",
-      image: "/images/floor-cleaning.jpg",
+      image: "/images/projects/industrial-cleaning.jpg",
       description: "Comprehensive deep cleaning of a manufacturing facility including high-dusting, floor refinishing, and equipment cleaning."
     },
     {
@@ -66,7 +66,7 @@ export function ProjectsGallery() {
       location: "Barrhaven, ON",
       duration: "4 Days",
       team: "7 Technicians",
-      image: "/images/debris-pile.jpg",
+      image: "/images/projects/fire-restoration.jpg",
       description: "Fire damage cleanup and restoration including smoke odor removal, debris disposal, and structural cleaning."
     }
   ]
