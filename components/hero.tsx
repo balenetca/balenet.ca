@@ -71,18 +71,18 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-4xl mx-auto mt-12 lg:mt-16 bg-white/90 rounded-lg p-6 md:p-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-4xl mx-auto mt-12 lg:mt-16 bg-bn-steel/90 rounded-lg p-6 md:p-8">
           <div className="text-center">
-            <h3 className="text-base md:text-lg font-medium text-foreground mb-2">{t("hero.service2")}</h3>
-            <p className="text-sm md:text-base text-muted-foreground font-light">{t("hero.service2.desc")}</p>
+            <h3 className="text-base md:text-lg font-medium text-bn-clean mb-2">{t("hero.pillar1")}</h3>
+            <p className="text-sm md:text-base text-bn-glacier font-light">{t("hero.pillar1.desc")}</p>
           </div>
           <div className="text-center">
-            <h3 className="text-base md:text-lg font-medium text-foreground mb-2">{t("hero.service3")}</h3>
-            <p className="text-sm md:text-base text-muted-foreground font-light">{t("hero.service3.desc")}</p>
+            <h3 className="text-base md:text-lg font-medium text-bn-restore mb-2">{t("hero.pillar2")}</h3>
+            <p className="text-sm md:text-base text-bn-glacier font-light">{t("hero.pillar2.desc")}</p>
           </div>
           <div className="text-center">
-            <h3 className="text-base md:text-lg font-medium text-foreground mb-2">{t("hero.service1")}</h3>
-            <p className="text-sm md:text-base text-muted-foreground font-light">{t("hero.service1.desc")}</p>
+            <h3 className="text-base md:text-lg font-medium text-bn-construct mb-2">{t("hero.pillar3")}</h3>
+            <p className="text-sm md:text-base text-bn-glacier font-light">{t("hero.pillar3.desc")}</p>
           </div>
         </div>
       </div>
