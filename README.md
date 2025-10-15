@@ -9,13 +9,21 @@ BaleNet Group provides professional construction and cleanup services across Ott
 ## 🚀 Live Site
 
 - **Main Site**: [balenet.ca](https://balenet.ca)
-- **Demo Page**: [balenet.ca/demo-construction.html](https://balenet.ca/demo-construction.html)
+- **Homepage**: [balenet.ca/index.html](https://balenet.ca/index.html)
 
 ## 📁 Project Structure
 
 ```
-├── demo-construction.html          # Main construction company page
-├── index.html                      # Entry point (redirects to demo-construction.html)
+├── index.html                      # Main construction company homepage
+├── about.html                      # About BaleNet Group page
+├── services.html                   # Services overview page
+├── clean-services.html             # Clean services detail page
+├── restore-services.html           # Restore services detail page
+├── construct-services.html         # Construct services detail page
+├── emergency-services.html         # Emergency services detail page
+├── projects.html                   # Projects portfolio page
+├── blog.html                       # Blog listing page
+├── contact.html                    # Contact page
 ├── css/                           # Stylesheets
 │   ├── theme.css                  # Main theme styles
 │   ├── demos/demo-construction.css # Construction-specific styles
