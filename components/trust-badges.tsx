@@ -1,3 +1,5 @@
+"use client"
+
 import { Shield, Award, Clock, CheckCircle } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
 

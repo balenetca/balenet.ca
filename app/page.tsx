@@ -7,6 +7,7 @@ import { WhyChooseUs } from "@/components/why-choose-us"
 import { Testimonials } from "@/components/testimonials"
 import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
+import { LanguageProvider } from "@/contexts/language-context"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -150,7 +151,7 @@ export default function HomePage() {
   }
 
   return (
-    <>
+    <LanguageProvider initialLanguage="en">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessStructuredData) }}
@@ -180,6 +181,6 @@ export default function HomePage() {
         </main>
         <Footer />
       </div>
-    </>
+    </LanguageProvider>
   )
 }
