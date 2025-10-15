@@ -24,27 +24,27 @@ const translations = {
     "nav.contact": "Contact",
     "nav.getQuote": "Get Quote",
 
-    // Hero - Updated content
-    "hero.title": "BALE•NET - Professional Construction Cleanup",
-    "hero.subtitle": "From debris to spotless, we handle the mess so you enjoy the results.",
+    // Hero - Vision becomes reality theme
+    "hero.title": "Vision becomes reality",
+    "hero.subtitle": "Clean. Restore. Construct. Leading the future through innovation-first solutions in Ottawa, Gatineau, and surrounding areas.",
     "hero.cta": "Get Free Quote",
     "hero.phone": "Call Now",
-    "hero.service1": "Post-Construction Cleanup",
-    "hero.service2": "Debris Removal",
-    "hero.service3": "Deep Cleaning",
-    "hero.service1.desc": "Complete site cleanup and debris hauling",
-    "hero.service2.desc": "Thorough post-construction cleaning",
-    "hero.service3.desc": "Reliable partner for contractors",
+    "hero.pillar1": "Clean",
+    "hero.pillar2": "Restore", 
+    "hero.pillar3": "Construct",
+    "hero.pillar1.desc": "Vision becomes reality through pristine, innovation-driven spaces",
+    "hero.pillar2.desc": "Vision becomes reality through complete, technology-enhanced restoration",
+    "hero.pillar3.desc": "Vision becomes reality through innovative builds and smart solutions",
 
-    // About
-    "about.title": "About BALE•NET",
+    // About - Vision becomes reality theme
+    "about.title": "About BaleNet Group Inc",
     "about.description":
-      "BALE•NET specializes in comprehensive construction cleaning and debris removal services. With years of experience in the industry, we understand the unique challenges that come with post-construction cleanup.",
+      "BaleNet Group Inc is more than a service provider — we are a partner in the life cycle of your property and assets. With expertise spanning Clean, Restore, and Construct services, we help our clients build, manage, and sustain their investments.",
     "about.mission":
-      "Our mission is to transform construction sites into pristine, move-in ready spaces. We handle everything from heavy debris removal to detailed final cleaning, ensuring your project is completed to the highest standards.",
+      "To be Canada's go-to partner for end-to-end asset services, ensuring every build, facility, and property runs smoothly, sustainably, and profitably. Where Vision Becomes Reality - We lead the future by turning innovative ideas into tangible results.",
     "about.mission.title": "Our Mission",
     "about.vision.title": "Our Vision",
-    "about.vision.description": "To be the most trusted cleaning partner for builders, contractors, and property owners across the region. We are committed to delivering exceptional service that exceeds expectations while maintaining the highest standards of professionalism and reliability.",
+    "about.vision.description": "Vision becomes reality through our three pillars: Clean, Restore, Construct. We lead the future through innovation-first solutions, transforming challenges into opportunities and delivering results that exceed expectations.",
     "about.values.title": "Our Core Values",
     "about.values.professionalism.title": "Professionalism",
     "about.values.professionalism.description": "We treat every project with care and respect",
@@ -59,35 +59,40 @@ const translations = {
     "about.serviceAreas.title": "Service Areas",
     "about.serviceAreas.description": "Ottawa, Gatineau, Carleton, Hull, Aylmer, Orleans, Kanata, Nepean, Gloucester, Ottawa South, Barrhaven, Stittsville",
 
-    // Services
-    "services.title": "Our Services",
-    "services.subtitle": "Comprehensive cleaning solutions for every stage of your construction project",
+    // Services - Three Pillars
+    "services.title": "Our Three Pillars",
+    "services.subtitle": "Vision becomes reality through Clean, Restore, and Construct services. Leading the future through innovation-first solutions.",
     "services.beforeAfter": "Before & After Results",
     "services.professionalTeam": "Professional Team",
-    "services.postConstruction.title": "Post-Construction Cleaning",
-    "services.postConstruction.description":
-      "Complete cleanup after construction projects, removing dust, debris, and preparing spaces for occupancy.",
-    "services.postConstruction.bullet1": "Complete dust & debris removal",
-    "services.postConstruction.bullet2": "Window & glass surface cleaning",
-    "services.postConstruction.bullet3": "Floor scrubbing & polishing",
-    "services.postConstruction.bullet4": "Fixture & appliance detailing",
-    "services.postConstruction.bullet5": "Final inspection & touch-ups",
-    "services.debrisRemoval.title": "Debris Removal",
-    "services.debrisRemoval.description":
-      "Safe and efficient removal of construction waste, materials, and debris from your job site. We provide comprehensive debris management solutions to keep your construction area clean and organized throughout your project.",
-    "services.debrisRemoval.bullet1": "On-site debris & waste removal",
-    "services.debrisRemoval.bullet2": "Dumpster rental & placement",
-    "services.debrisRemoval.bullet3": "Hazardous material disposal",
-    "services.debrisRemoval.bullet4": "Recycling & eco-friendly practices",
-    "services.debrisRemoval.bullet5": "Site cleanup & organization",
-    "services.deepCleaning.title": "Deep Cleaning",
-    "services.deepCleaning.description":
-      "Thorough cleaning of all surfaces, fixtures, and areas to ensure a spotless finish. Our comprehensive deep cleaning process eliminates hidden dirt, dust, and debris that standard cleaning methods often miss.",
-    "services.deepCleaning.bullet1": "Full surface wipe-down & sanitization",
-    "services.deepCleaning.bullet2": "HVAC system cleaning & filter replacement",
-    "services.deepCleaning.bullet3": "Bathroom & kitchen deep cleaning",
-    "services.deepCleaning.bullet4": "Carpet cleaning & floor treatment",
-    "services.deepCleaning.bullet5": "Light fixture & ceiling fan cleaning",
+    // Clean Pillar
+    "services.clean.title": "Clean Services",
+    "services.clean.description":
+      "Vision becomes reality through pristine, innovation-driven spaces. Professional cleaning services including daily janitorial, deep cleaning, floor care, and post-construction cleanup.",
+    "services.clean.bullet1": "Daily & nightly janitorial services",
+    "services.clean.bullet2": "Deep cleaning & sanitization",
+    "services.clean.bullet3": "Floor care & carpet maintenance",
+    "services.clean.bullet4": "Post-construction cleanup",
+    "services.clean.bullet5": "Window cleaning & high dusting",
+    
+    // Restore Pillar
+    "services.restore.title": "Restore Services",
+    "services.restore.description":
+      "Vision becomes reality through complete, technology-enhanced restoration. Emergency disaster recovery, water damage cleanup, fire restoration, and mold remediation services.",
+    "services.restore.bullet1": "Water & flood damage cleanup",
+    "services.restore.bullet2": "Fire & smoke damage restoration",
+    "services.restore.bullet3": "Mold remediation & prevention",
+    "services.restore.bullet4": "Odor control & air purification",
+    "services.restore.bullet5": "Insurance scope & documentation",
+    
+    // Construct Pillar
+    "services.construct.title": "Construct Services",
+    "services.construct.description":
+      "Vision becomes reality through innovative builds and smart solutions. Professional demolition, tenant fit-outs, renovations, and facility upgrades with cutting-edge construction methods.",
+    "services.construct.bullet1": "Demolition & site preparation",
+    "services.construct.bullet2": "Tenant fit-outs & renovations",
+    "services.construct.bullet3": "Small builds & facility upgrades",
+    "services.construct.bullet4": "Compliance & safety updates",
+    "services.construct.bullet5": "Punch-list closeouts & inspections",
     "services.finalCleaning.title": "Final Cleaning",
     "services.finalCleaning.description":
       "The finishing touch that makes your space move-in ready with attention to every detail. This comprehensive final cleaning service ensures your newly constructed or renovated space is pristine and ready for occupancy or sale.",
@@ -108,9 +113,9 @@ const translations = {
     "services.demolition.bullet4": "Safe material handling & disposal",
     "services.demolition.bullet5": "Permit assistance & compliance",
 
-    // Why Choose Us
-    "whyChoose.title": "Why Choose BALE•NET?",
-    "whyChoose.subtitle": "We're more than just a cleaning service, we're your trusted construction partner",
+    // Why Choose Us - Vision becomes reality theme
+    "whyChoose.title": "Why Choose BaleNet Group Inc?",
+    "whyChoose.subtitle": "Vision becomes reality through our innovation-first approach. We're your trusted partner for Clean, Restore, and Construct services",
     "whyChoose.experienced.title": "Experienced Team",
     "whyChoose.experienced.description":
       "Our skilled professionals have years of experience in construction cleanup and debris removal.",
@@ -181,7 +186,7 @@ const translations = {
 
     // Footer
     "footer.description":
-      "Professional construction cleaning and debris removal services. Making your project site spotless and ready.",
+      "BaleNet Group Inc - Where Vision Becomes Reality. Professional Clean, Restore, and Construct services. Your trusted partner for innovation-first solutions in Ottawa, Gatineau, and surrounding areas.",
     "footer.services.title": "Services",
     "footer.contact.title": "Contact",
     "footer.links.title": "Quick Links",
@@ -195,27 +200,27 @@ const translations = {
     "nav.contact": "Contact",
     "nav.getQuote": "Devis gratuit",
 
-    // Hero
-    "hero.title": "BALE•NET - Nettoyage professionnel de construction",
-    "hero.subtitle": "Des débris à l'impeccable, nous nous occupons du désordre pour que vous profitiez des résultats.",
+    // Hero - Vision devient réalité
+    "hero.title": "La vision devient réalité",
+    "hero.subtitle": "Nettoyer. Restaurer. Construire. Mener l'avenir grâce à des solutions axées sur l'innovation à Ottawa, Gatineau et dans les environs.",
     "hero.cta": "Devis gratuit",
     "hero.phone": "Appelez maintenant",
-    "hero.service1": "Nettoyage post-construction",
-    "hero.service2": "Enlèvement de débris",
-    "hero.service3": "Nettoyage en profondeur",
-    "hero.service1.desc": "Nettoyage complet de site et transport de débris",
-    "hero.service2.desc": "Nettoyage minutieux post-construction",
-    "hero.service3.desc": "Partenaire fiable pour entrepreneurs",
+    "hero.pillar1": "Nettoyer",
+    "hero.pillar2": "Restaurer",
+    "hero.pillar3": "Construire",
+    "hero.pillar1.desc": "La vision devient réalité grâce à des espaces immaculés et axés sur l'innovation",
+    "hero.pillar2.desc": "La vision devient réalité grâce à une restauration complète et améliorée par la technologie",
+    "hero.pillar3.desc": "La vision devient réalité grâce à des constructions innovantes et des solutions intelligentes",
 
-    // About
-    "about.title": "À propos de BALE•NET",
+    // About - Vision devient réalité
+    "about.title": "À propos de BaleNet Group Inc",
     "about.description":
-      "BALE•NET se spécialise dans les services complets de nettoyage de construction et d'enlèvement de débris. Avec des années d'expérience dans l'industrie, nous comprenons les défis uniques du nettoyage post-construction.",
+      "BaleNet Group Inc est plus qu'un fournisseur de services — nous sommes un partenaire dans le cycle de vie de vos biens et actifs. Avec une expertise couvrant les services Nettoyer, Restaurer et Construire, nous aidons nos clients à construire, gérer et maintenir leurs investissements.",
     "about.mission":
-      "Notre mission est de transformer les chantiers de construction en espaces impeccables et prêts à emménager. Nous nous occupons de tout, de l'enlèvement des gros débris au nettoyage final détaillé, en veillant à ce que votre projet soit terminé selon les plus hauts standards.",
+      "Être le partenaire de référence du Canada pour les services d'actifs de bout en bout, en veillant à ce que chaque construction, installation et propriété fonctionne en douceur, de manière durable et rentable. Où la Vision Devient Réalité - Nous menons l'avenir en transformant des idées innovantes en résultats tangibles.",
     "about.mission.title": "Notre Mission",
     "about.vision.title": "Notre Vision",
-    "about.vision.description": "Être le partenaire de nettoyage le plus fiable pour les constructeurs, entrepreneurs et propriétaires de la région. Nous nous engageons à offrir un service exceptionnel qui dépasse les attentes tout en maintenant les plus hauts standards de professionnalisme et de fiabilité.",
+    "about.vision.description": "La vision devient réalité grâce à nos trois piliers : Nettoyer, Restaurer, Construire. Nous menons l'avenir grâce à des solutions axées sur l'innovation, transformant les défis en opportunités et livrant des résultats qui dépassent les attentes.",
     "about.values.title": "Nos Valeurs Fondamentales",
     "about.values.professionalism.title": "Professionnalisme",
     "about.values.professionalism.description": "Nous traitons chaque projet avec soin et respect",
