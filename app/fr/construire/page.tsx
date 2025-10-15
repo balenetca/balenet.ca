@@ -9,7 +9,7 @@ import Image from "next/image"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Services de Construction et Rénovation | BaleNet Group Inc",
+  title: "Services de Construction et Rénovation | BaleNet Group",
   description: "La vision devient réalité grâce à des constructions innovantes et des solutions intelligentes. Démolition professionnelle, aménagements locataires, rénovations et améliorations d'installations avec méthodes de construction de pointe.",
   keywords: [
     "services de démolition",
@@ -50,21 +50,6 @@ export default function ConstruirePage() {
       description: "Services de rénovation professionnels pour propriétés résidentielles et commerciales avec solutions de design modernes.",
       features: ["Rénovations cuisine", "Remodelage salle de bain", "Reconfigurations bureaux", "Redesign intérieur"]
     },
-    {
-      title: "Améliorations d'Installations et Maintenance",
-      description: "Améliorations d'installations complètes incluant améliorations mécaniques, électriques et structurales.",
-      features: ["Améliorations CVCA", "Travaux électriques", "Mises à jour plomberie", "Réparations structurales"]
-    },
-    {
-      title: "Accessibilité et Conformité",
-      description: "Mises à jour de conformité ADA, améliorations d'accessibilité et modifications de conformité au code du bâtiment.",
-      features: ["Conformité ADA", "Rampes d'accessibilité", "Mises à jour code", "Améliorations sécurité"]
-    },
-    {
-      title: "Fermeture et Mise en Service",
-      description: "Services de fermeture de projet incluant complétion de liste de finition, mise en service et gestion de garantie.",
-      features: ["Complétion liste finition", "Mise en service systèmes", "Gestion garantie", "Inspections finales"]
-    }
   ]
 
   const whyChoose = [
@@ -109,7 +94,7 @@ export default function ConstruirePage() {
     },
     {
       question: "Quels types de projets de construction gérez-vous?",
-      answer: "Nous gérons projets résidentiels et commerciaux incluant démolitions, rénovations, aménagements locataires, améliorations d'installations et améliorations d'accessibilité."
+      answer: "Nous gérons projets résidentiels et commerciaux incluant démolitions, rénovations et aménagements locataires."
     },
     {
       question: "Fournissez-vous des garanties sur travaux de construction?",

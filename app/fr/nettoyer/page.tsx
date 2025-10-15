@@ -9,7 +9,7 @@ import Image from "next/image"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Services de Nettoyage Professionnel | BaleNet Group Inc",
+  title: "Services de Nettoyage Professionnel | BaleNet Group",
   description: "La vision devient réalité grâce à des espaces immaculés et innovants. Services de nettoyage professionnel incluant entretien ménager quotidien, nettoyage en profondeur, entretien de planchers et nettoyage post-construction.",
   keywords: [
     "services de nettoyage professionnel",

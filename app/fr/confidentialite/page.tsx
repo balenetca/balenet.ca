@@ -4,8 +4,8 @@ import { Footer } from "@/components/footer"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 export const metadata: Metadata = {
-  title: "Politique de Confidentialité - BaleNet Group Inc",
-  description: "Politique de confidentialité pour BaleNet Group Inc. Apprenez comment nous collectons, utilisons et protégeons vos informations personnelles.",
+  title: "Politique de Confidentialité - BaleNet Group",
+  description: "Politique de confidentialité pour BaleNet Group. Apprenez comment nous collectons, utilisons et protégeons vos informations personnelles.",
   robots: "noindex, nofollow",
   alternates: {
     canonical: "https://www.balenet.ca/fr/confidentialite",

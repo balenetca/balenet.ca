@@ -9,7 +9,7 @@ import Image from "next/image"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Construct Services - Demolition & Renovations | BaleNet Group Inc",
+  title: "Construct Services - Demolition & Renovations | BaleNet Group",
   description: "Vision becomes reality through innovative builds and smart solutions. Professional demolition, tenant fit-outs, renovations, and facility upgrades with cutting-edge construction methods.",
   keywords: [
     "demolition services",
@@ -50,21 +50,6 @@ export default function ConstructPage() {
       description: "Professional renovation services for residential and commercial properties with modern design solutions.",
       features: ["Kitchen renovations", "Bathroom remodels", "Office reconfigurations", "Interior redesign"]
     },
-    {
-      title: "Facility Upgrades & Maintenance",
-      description: "Comprehensive facility upgrades including mechanical, electrical, and structural improvements.",
-      features: ["HVAC upgrades", "Electrical work", "Plumbing updates", "Structural repairs"]
-    },
-    {
-      title: "Accessibility & Compliance",
-      description: "ADA compliance updates, accessibility improvements, and building code compliance modifications.",
-      features: ["ADA compliance", "Accessibility ramps", "Code updates", "Safety improvements"]
-    },
-    {
-      title: "Closeout & Commissioning",
-      description: "Project closeout services including punch list completion, commissioning, and warranty management.",
-      features: ["Punch list completion", "Systems commissioning", "Warranty management", "Final inspections"]
-    }
   ]
 
   const whyChoose = [
@@ -109,7 +94,7 @@ export default function ConstructPage() {
     },
     {
       question: "What types of construction projects do you handle?",
-      answer: "We handle residential and commercial projects including demolitions, renovations, tenant fit-outs, facility upgrades, and accessibility improvements."
+      answer: "We handle residential and commercial projects including demolitions, renovations, and tenant fit-outs."
     },
     {
       question: "Do you provide warranties on construction work?",

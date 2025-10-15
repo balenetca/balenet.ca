@@ -87,12 +87,12 @@ const translations = {
     // Construct Pillar
     "services.construct.title": "Construct Services",
     "services.construct.description":
-      "Vision becomes reality through innovative builds and smart solutions. Professional demolition, tenant fit-outs, renovations, and facility upgrades with cutting-edge construction methods.",
+      "Vision becomes reality through innovative builds and smart solutions. Professional demolition, tenant fit-outs, and renovations with cutting-edge construction methods.",
     "services.construct.bullet1": "Demolition & site preparation",
     "services.construct.bullet2": "Tenant fit-outs & renovations",
-    "services.construct.bullet3": "Small builds & facility upgrades",
-    "services.construct.bullet4": "Compliance & safety updates",
-    "services.construct.bullet5": "Punch-list closeouts & inspections",
+    "services.construct.bullet3": "Small builds & renovations",
+    "services.construct.bullet4": "Custom finishes & design",
+    "services.construct.bullet5": "Project management & coordination",
     "services.finalCleaning.title": "Final Cleaning",
     "services.finalCleaning.description":
       "The finishing touch that makes your space move-in ready with attention to every detail. This comprehensive final cleaning service ensures your newly constructed or renovated space is pristine and ready for occupancy or sale.",

@@ -9,7 +9,7 @@ import Image from "next/image"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Clean Services - Professional Cleaning & Janitorial | BaleNet Group Inc",
+  title: "Clean Services - Professional Cleaning & Janitorial | BaleNet Group",
   description: "Vision becomes reality through pristine, innovation-driven spaces. Professional cleaning services including daily janitorial, deep cleaning, floor care, and post-construction cleanup.",
   keywords: [
     "professional cleaning services",

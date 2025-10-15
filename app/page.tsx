@@ -42,7 +42,7 @@ export default function HomePage() {
   const localBusinessStructuredData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "BaleNet Group Inc",
+    "name": "BaleNet Group",
     "description": "Vision becomes reality through our three pillars: Clean, Restore, Construct. Leading the future through innovation-first solutions in Ottawa, Gatineau, and surrounding areas.",
     "url": "https://www.balenet.ca",
     "logo": "https://www.balenet.ca/images/balenet-group-logo.png",
@@ -95,7 +95,7 @@ export default function HomePage() {
       {
         "@type": "LocalBusiness",
         "name": "Construct Services", 
-        "description": "Vision becomes reality through innovative builds and smart solutions. Professional demolition, tenant fit-outs, renovations, and facility upgrades with cutting-edge construction methods.",
+        "description": "Vision becomes reality through innovative builds and smart solutions. Professional demolition, tenant fit-outs, and renovations with cutting-edge construction methods.",
         "url": "https://www.balenet.ca/construct"
       }
     ]
@@ -107,18 +107,18 @@ export default function HomePage() {
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "What areas does BaleNet Group Inc serve?",
+        "name": "What areas does BaleNet Group serve?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "BaleNet Group Inc serves Ottawa, Gatineau, Carleton, Hull, Aylmer, Orleans, Kanata, Nepean, Gloucester, Ottawa South, Barrhaven, Stittsville, and surrounding areas in the National Capital Region."
+          "text": "BaleNet Group serves Ottawa, Gatineau, Carleton, Hull, Aylmer, Orleans, Kanata, Nepean, Gloucester, Ottawa South, Barrhaven, Stittsville, and surrounding areas in the National Capital Region."
         }
       },
       {
         "@type": "Question",
-        "name": "What services does BaleNet Group Inc offer?",
+        "name": "What services does BaleNet Group offer?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "BaleNet Group Inc offers comprehensive three-pillar services: Clean (janitorial, deep cleaning, floor care), Restore (disaster recovery, mold remediation, water damage), and Construct (demolition, fit-outs, renovations)."
+          "text": "BaleNet Group offers comprehensive three-pillar services: Clean (janitorial, deep cleaning, floor care), Restore (disaster recovery, mold remediation, water damage), and Construct (demolition, fit-outs, renovations)."
         }
       },
       {
@@ -131,18 +131,18 @@ export default function HomePage() {
       },
       {
         "@type": "Question",
-        "name": "What are BaleNet Group Inc's operating hours?",
+        "name": "What are BaleNet Group's operating hours?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "BaleNet Group Inc operates 7 days a week, 24 hours a day. We provide round-the-clock Clean, Restore, and Construct services to accommodate urgent project needs and tight deadlines."
+          "text": "BaleNet Group operates 7 days a week, 24 hours a day. We provide round-the-clock Clean, Restore, and Construct services to accommodate urgent project needs and tight deadlines."
         }
       },
       {
         "@type": "Question",
-        "name": "Does BaleNet Group Inc provide quality guarantees?",
+        "name": "Does BaleNet Group provide quality guarantees?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, BaleNet Group Inc provides comprehensive quality guarantees on all services. We ensure every project meets the highest standards with innovation-first approaches and professional expertise across Clean, Restore, and Construct services."
+          "text": "Yes, BaleNet Group provides comprehensive quality guarantees on all services. We ensure every project meets the highest standards with innovation-first approaches and professional expertise across Clean, Restore, and Construct services."
         }
       }
     ]

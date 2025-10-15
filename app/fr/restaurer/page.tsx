@@ -9,7 +9,7 @@ import Image from "next/image"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Services de Restauration et Récupération | BaleNet Group Inc",
+  title: "Services de Restauration et Récupération | BaleNet Group",
   description: "La vision devient réalité grâce à une restauration complète et améliorée par la technologie. Récupération d'urgence, nettoyage de dégâts d'eau, restauration d'incendie et assainissement de moisissures.",
   keywords: [
     "récupération de catastrophe",

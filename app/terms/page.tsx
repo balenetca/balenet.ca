@@ -4,8 +4,8 @@ import { Footer } from "@/components/footer"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 export const metadata: Metadata = {
-  title: "Terms of Service - BaleNet Group Inc",
-  description: "Terms of Service for BaleNet Group Inc. Read our terms and conditions for using our services.",
+  title: "Terms of Service - BaleNet Group",
+  description: "Terms of Service for BaleNet Group. Read our terms and conditions for using our services.",
   robots: "noindex, nofollow",
   alternates: {
     canonical: "https://www.balenet.ca/terms",
