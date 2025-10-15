@@ -367,15 +367,23 @@ const translations = {
   },
 }
 
-export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [language, setLanguage] = useState<Language>("en")
+interface LanguageProviderProps {
+  children: React.ReactNode
+  initialLanguage?: Language
+}
+
+export function LanguageProvider({ children, initialLanguage = "en" }: LanguageProviderProps) {
+  const [language, setLanguage] = useState<Language>(initialLanguage)
 
   useEffect(() => {
-    const savedLanguage = localStorage.getItem("language") as Language
-    if (savedLanguage && (savedLanguage === "en" || savedLanguage === "fr")) {
-      setLanguage(savedLanguage)
+    // Only use localStorage if no initialLanguage was provided
+    if (!initialLanguage) {
+      const savedLanguage = localStorage.getItem("language") as Language
+      if (savedLanguage && (savedLanguage === "en" || savedLanguage === "fr")) {
+        setLanguage(savedLanguage)
+      }
     }
-  }, [])
+  }, [initialLanguage])
 
   const handleSetLanguage = (lang: Language) => {
     setLanguage(lang)

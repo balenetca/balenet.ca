@@ -92,17 +92,17 @@ Serving Ottawa, Gatineau, and surrounding areas`
   }
 
   return (
-    <section id="contact" className="py-20 bg-background">
+    <section id="contact" className="py-20 bg-bn-steel">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-balance">{t("contact.title")}</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">{t("contact.subtitle")}</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-bn-white mb-4 text-balance">{t("contact.title")}</h2>
+          <p className="text-lg text-bn-glacier max-w-2xl mx-auto text-pretty">{t("contact.subtitle")}</p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
           <div className="flex flex-col">
-            <h3 className="text-2xl font-semibold text-foreground mb-6">{t("contact.form.title")}</h3>
-            <Card className="bg-card border-border flex-1">
+            <h3 className="text-2xl font-semibold text-bn-white mb-6">{t("contact.form.title")}</h3>
+            <Card className="bg-bn-white border-bn-silver flex-1">
               <CardContent className="p-6 flex flex-col h-full">
                 <form onSubmit={handleSubmit} className="space-y-4 flex-1 flex flex-col">
                   <div className="grid md:grid-cols-2 gap-4">
@@ -111,7 +111,7 @@ Serving Ottawa, Gatineau, and surrounding areas`
                       value={formData.name}
                       onChange={handleInputChange}
                       placeholder={t("contact.form.name")} 
-                      className="bg-input border-border" 
+                      className="bg-bn-white border-bn-silver" 
                       required 
                     />
                     <Input 
@@ -119,7 +119,7 @@ Serving Ottawa, Gatineau, and surrounding areas`
                       value={formData.phone}
                       onChange={handleInputChange}
                       placeholder={t("contact.form.phone")} 
-                      className="bg-input border-border" 
+                      className="bg-bn-white border-bn-silver" 
                     />
                   </div>
                   <Input 
@@ -148,39 +148,39 @@ Serving Ottawa, Gatineau, and surrounding areas`
           </div>
 
           <div className="flex flex-col">
-            <h3 className="text-2xl font-semibold text-foreground mb-6">{t("contact.info.title")}</h3>
+            <h3 className="text-2xl font-semibold text-bn-white mb-6">{t("contact.info.title")}</h3>
             <div className="space-y-4 flex-1">
-              <Card className="bg-card border-border">
+              <Card className="bg-bn-white border-bn-silver">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-4">
-                    <Phone className="h-8 w-8 text-primary" />
+                    <Phone className="h-8 w-8 text-bn-construct" />
                     <div>
-                      <h4 className="font-semibold text-foreground">{t("contact.info.phone")}</h4>
-                      <p className="text-muted-foreground">(514) 577-8776</p>
+                      <h4 className="font-semibold text-bn-steel">{t("contact.info.phone")}</h4>
+                      <p className="text-bn-graphite">(514) 577-8776</p>
                     </div>
                   </div>
                 </CardContent>
               </Card>
 
-              <Card className="bg-card border-border">
+              <Card className="bg-bn-white border-bn-silver">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-4">
-                    <Mail className="h-8 w-8 text-primary" />
+                    <Mail className="h-8 w-8 text-bn-construct" />
                     <div>
-                      <h4 className="font-semibold text-foreground">{t("contact.info.email")}</h4>
-                      <p className="text-muted-foreground">info@balenet.ca</p>
+                      <h4 className="font-semibold text-bn-steel">{t("contact.info.email")}</h4>
+                      <p className="text-bn-graphite">info@balenet.ca</p>
                     </div>
                   </div>
                 </CardContent>
               </Card>
 
-              <Card className="bg-card border-border">
+              <Card className="bg-bn-white border-bn-silver">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-4">
-                    <Clock className="h-8 w-8 text-primary" />
+                    <Clock className="h-8 w-8 text-bn-construct" />
                     <div>
-                      <h4 className="font-semibold text-foreground">{t("contact.info.hours")}</h4>
-                      <p className="text-muted-foreground">{t("contact.info.hoursValue")}</p>
+                      <h4 className="font-semibold text-bn-steel">{t("contact.info.hours")}</h4>
+                      <p className="text-bn-graphite">{t("contact.info.hoursValue")}</p>
                     </div>
                   </div>
                 </CardContent>

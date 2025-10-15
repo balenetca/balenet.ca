@@ -9,7 +9,7 @@ export function Hero() {
   const { t } = useLanguage()
 
   return (
-    <section id="home" className="relative bg-white py-16 md:py-24 lg:py-32 overflow-hidden">
+    <section id="home" className="relative bg-bn-steel py-16 md:py-24 lg:py-32 overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/construction-site-bg.jpg"
@@ -18,14 +18,14 @@ export function Hero() {
           className="object-cover opacity-90"
           priority
         />
-        <div className="absolute inset-0 bg-white/70"></div>
+        <div className="absolute inset-0 bg-bn-steel/90"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 max-w-6xl mx-auto">
           <div className="flex-shrink-0 order-2 lg:order-1">
             <Image
-              src="/images/balenet-logo.png"
+              src="/icons/balenet-logo-512x512.png"
               alt="BaleNet Group Logo"
               width={200}
               height={200}
@@ -36,13 +36,13 @@ export function Hero() {
           <div className="flex-1 text-center lg:text-left order-1 lg:order-2">
             <div className="flex items-center justify-center lg:justify-start gap-2 mb-4">
               <Sparkles className="h-5 w-5 md:h-6 md:w-6 text-bn-gold" />
-              <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold text-bn-black text-balance tracking-tight">
+              <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold text-bn-white text-balance tracking-tight">
                 {t("hero.title")}
               </h1>
               <Sparkles className="h-5 w-5 md:h-6 md:w-6 text-bn-gold" />
             </div>
 
-            <p className="text-lg md:text-xl lg:text-2xl text-bn-graphite mb-6 lg:mb-8 text-pretty font-light leading-relaxed">
+            <p className="text-lg md:text-xl lg:text-2xl text-bn-glacier mb-6 lg:mb-8 text-pretty font-light leading-relaxed">
               {t("hero.subtitle")}
             </p>
 
@@ -60,7 +60,7 @@ export function Hero() {
               <Button 
                 variant="outline" 
                 size="lg" 
-                className="text-base lg:text-lg px-6 lg:px-8 py-3 lg:py-4 rounded-md border-bn-gold text-bn-gold hover:bg-bn-gold hover:text-bn-steel bg-white/80"
+                className="text-base lg:text-lg px-6 lg:px-8 py-3 lg:py-4 rounded-md border-bn-gold text-bn-gold hover:bg-bn-gold hover:text-bn-steel bg-bn-steel/80"
                 asChild
               >
                 <a href="tel:+15145778776">

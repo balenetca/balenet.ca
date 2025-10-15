@@ -9,7 +9,7 @@ export function Services() {
   const { t } = useLanguage()
 
   return (
-    <section id="services" className="py-20 bg-background">
+    <section id="services" className="py-20 bg-bn-white">
         <div className="container mx-auto px-4">
           {/* Updated services section */}
           <div className="text-center mb-16">
