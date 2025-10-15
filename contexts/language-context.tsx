@@ -24,9 +24,9 @@ const translations = {
     "nav.contact": "Contact",
     "nav.getQuote": "Get Quote",
 
-    // Hero - Vision becomes reality theme
-    "hero.title": "Vision becomes reality",
-    "hero.subtitle": "Clean. Restore. Construct. Leading the future through innovation-first solutions in Ottawa, Gatineau, and surrounding areas.",
+    // Hero - Construction company theme
+    "hero.title": "Professional Construction & Cleanup Services",
+    "hero.subtitle": "Expert construction and cleanup services across Ottawa, Gatineau, and surrounding areas. Quality workmanship and reliable results.",
     "hero.cta": "Get Free Quote",
     "hero.phone": "Call Now",
     "hero.pillar1": "Clean",
@@ -36,15 +36,15 @@ const translations = {
     "hero.pillar2.desc": "Vision becomes reality through complete, technology-enhanced restoration",
     "hero.pillar3.desc": "Vision becomes reality through innovative builds and smart solutions",
 
-    // About - Vision becomes reality theme
+    // About - Construction company theme
     "about.title": "About BaleNet Group",
     "about.description":
-      "BaleNet Group is more than a service provider — we are a partner in the life cycle of your property and assets. With expertise spanning Clean, Restore, and Construct services, we help our clients build, manage, and sustain their investments.",
+      "BaleNet Group is a professional construction and cleanup company serving Ottawa, Gatineau, and surrounding areas. With over 15 years of experience, we deliver quality workmanship and reliable results for all your construction and cleanup needs.",
     "about.mission":
-      "To be Canada's go-to partner for end-to-end asset services, ensuring every build, facility, and property runs smoothly, sustainably, and profitably. Where Vision Becomes Reality - We lead the future by turning innovative ideas into tangible results.",
+      "To be the trusted construction and cleanup partner for businesses and homeowners across the National Capital Region. We deliver quality results, exceptional service, and innovative solutions that exceed expectations.",
     "about.mission.title": "Our Mission",
     "about.vision.title": "Our Vision",
-    "about.vision.description": "Vision becomes reality through our three pillars: Clean, Restore, Construct. We lead the future through innovation-first solutions, transforming challenges into opportunities and delivering results that exceed expectations.",
+    "about.vision.description": "To be the leading construction and cleanup company in the National Capital Region, known for our quality workmanship, innovative solutions, and exceptional customer service.",
     "about.values.title": "Our Core Values",
     "about.values.professionalism.title": "Professionalism",
     "about.values.professionalism.description": "We treat every project with care and respect",
@@ -186,7 +186,7 @@ const translations = {
 
     // Footer
     "footer.description":
-      "BaleNet Group - Where Vision Becomes Reality. Professional Clean, Restore, and Construct services. Your trusted partner for innovation-first solutions in Ottawa, Gatineau, and surrounding areas.",
+      "BaleNet Group - Professional construction and cleanup services. Your trusted partner for quality results in Ottawa, Gatineau, and surrounding areas.",
     "footer.services.title": "Services",
     "footer.contact.title": "Contact",
     "footer.links.title": "Quick Links",

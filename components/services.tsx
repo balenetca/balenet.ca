@@ -1,270 +1,136 @@
 "use client"
-
+// Porto-style construction services section
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Hammer, Sparkles, Plus, Shield, Wrench } from "lucide-react"
+import { Sparkles, Shield, Wrench, CheckCircle } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
 import Image from "next/image"
 
 export function Services() {
   const { t } = useLanguage()
 
+  const services = [
+    {
+      icon: <Sparkles className="h-8 w-8 text-bn-primary" />,
+      title: "Clean Services",
+      description: "Professional cleaning services including daily janitorial, deep cleaning, floor care, and post-construction cleanup.",
+      image: "/images/floor-cleaning.jpg",
+      features: [
+        "Daily & nightly janitorial services",
+        "Deep cleaning & sanitization", 
+        "Floor care & carpet maintenance",
+        "Post-construction cleanup",
+        "Window cleaning & high dusting"
+      ],
+      color: "border-l-bn-primary"
+    },
+    {
+      icon: <Shield className="h-8 w-8 text-bn-blue" />,
+      title: "Restore Services", 
+      description: "Emergency disaster recovery, water damage cleanup, fire restoration, and mold remediation services.",
+      image: "/images/disaster-recovery-cleaning-emergency-response-team.jpg",
+      features: [
+        "Water & flood damage cleanup",
+        "Fire & smoke damage restoration",
+        "Mold remediation & prevention",
+        "Odor control & air purification",
+        "Insurance scope & documentation"
+      ],
+      color: "border-l-bn-blue"
+    },
+    {
+      icon: <Wrench className="h-8 w-8 text-bn-orange" />,
+      title: "Construct Services",
+      description: "Professional demolition, tenant fit-outs, and renovations with cutting-edge construction methods.",
+      image: "/images/demolition-service.jpg", 
+      features: [
+        "Demolition & site preparation",
+        "Tenant fit-outs & renovations",
+        "Small builds & renovations",
+        "Custom finishes & design",
+        "Project management & coordination"
+      ],
+      color: "border-l-bn-orange"
+    }
+  ]
+
   return (
-    <section id="services" className="py-20 bg-bn-white">
-        <div className="container mx-auto px-4">
-          {/* Updated services section */}
-          <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-bn-steel mb-4 text-balance">{t("services.title")}</h2>
-          <p className="text-lg text-bn-graphite max-w-2xl mx-auto text-pretty">{t("services.subtitle")}</p>
+    <section id="services" className="py-20 bg-bn-light">
+      <div className="container mx-auto px-4">
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-bn-dark mb-4">
+            Our <span className="text-bn-primary">Services</span>
+          </h2>
+          <p className="text-lg text-bn-gray max-w-3xl mx-auto">
+            We provide comprehensive construction and cleanup services to meet all your project needs. 
+            From initial cleanup to final construction, we deliver quality results.
+          </p>
         </div>
 
-        <div className="mb-16">
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <div className="relative">
-              <Image
-                src="/images/before-after.jpg"
-                alt="Before and after construction cleaning comparison"
-                width={600}
-                height={400}
-                className="rounded-lg shadow-lg w-full h-64 object-cover"
-              />
-              <div className="absolute bottom-4 left-4 bg-black/70 text-white px-3 py-1 rounded text-sm">
-                {t("services.beforeAfter")}
+        {/* Services Grid */}
+        <div className="grid lg:grid-cols-3 gap-8 mb-16">
+          {services.map((service, index) => (
+            <Card key={index} className="bg-bn-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="relative h-48 overflow-hidden rounded-t-lg">
+                <Image
+                  src={service.image}
+                  alt={`${service.title} services`}
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-bn-dark/40"></div>
+                <div className="absolute top-4 left-4">
+                  {service.icon}
+                </div>
               </div>
-            </div>
-            <div className="relative">
-              <Image
-                src="/images/team-cleaning.jpg"
-                alt="BALE•NET professional cleaning team at work"
-                width={600}
-                height={400}
-                className="rounded-lg shadow-lg w-full h-64 object-cover"
-              />
-              <div className="absolute bottom-4 left-4 bg-black/70 text-white px-3 py-1 rounded text-sm">
-                {t("services.professionalTeam")}
-              </div>
-            </div>
-          </div>
+              
+              <CardHeader className="pb-4">
+                <CardTitle className="text-xl text-bn-dark">{service.title}</CardTitle>
+              </CardHeader>
+              
+              <CardContent>
+                <p className="text-bn-gray mb-6">{service.description}</p>
+                
+                <div className={`border-l-4 pl-4 ${service.color}`}>
+                  <h4 className="font-semibold text-bn-dark mb-3">What We Offer:</h4>
+                  <ul className="space-y-2">
+                    {service.features.map((feature, featureIndex) => (
+                      <li key={featureIndex} className="flex items-start gap-2">
+                        <CheckCircle className="h-4 w-4 text-bn-success mt-0.5 flex-shrink-0" />
+                        <span className="text-sm text-bn-gray">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
         </div>
 
-        <div className="flex justify-center">
-          <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl">
-            {/* Clean Pillar */}
-            <Card className="bg-bn-glacier border-bn-clean overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="relative h-48 bg-bn-clean/10">
-                <Image
-                  src="/images/floor-cleaning.jpg"
-                  alt="Clean services - professional floor cleaning"
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-bn-clean/20"></div>
-              </div>
-              <CardHeader>
-                <div className="flex items-center gap-3 mb-2">
-                  <Sparkles className="h-8 w-8 text-bn-clean" />
-                  <CardTitle className="text-xl text-bn-steel">{t("services.clean.title")}</CardTitle>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-bn-graphite mb-4">{t("services.clean.description")}</p>
-                <ul className="space-y-3 text-bn-graphite">
-                  <li className="flex items-start gap-2">
-                    <span className="text-bn-clean mt-1">•</span>
-                    {t("services.clean.bullet1")}
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-bn-clean mt-1">•</span>
-                    {t("services.clean.bullet2")}
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-bn-clean mt-1">•</span>
-                    {t("services.clean.bullet3")}
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-bn-clean mt-1">•</span>
-                    {t("services.clean.bullet4")}
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-bn-clean mt-1">•</span>
-                    {t("services.clean.bullet5")}
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            {/* Restore Pillar */}
-            <Card className="bg-bn-glacier border-bn-restore overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="relative h-48 bg-bn-restore/10">
-                <Image
-                  src="/images/disaster-recovery-cleaning-emergency-response-team.jpg"
-                  alt="Restore services - disaster recovery cleaning"
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-bn-restore/20"></div>
-              </div>
-              <CardHeader>
-                <div className="flex items-center gap-3 mb-2">
-                  <Shield className="h-8 w-8 text-bn-restore" />
-                  <CardTitle className="text-xl text-bn-steel">{t("services.restore.title")}</CardTitle>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-bn-graphite mb-4">{t("services.restore.description")}</p>
-                <ul className="space-y-3 text-bn-graphite">
-                  <li className="flex items-start gap-2">
-                    <span className="text-bn-restore mt-1">•</span>
-                    {t("services.restore.bullet1")}
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-bn-restore mt-1">•</span>
-                    {t("services.restore.bullet2")}
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-bn-restore mt-1">•</span>
-                    {t("services.restore.bullet3")}
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-bn-restore mt-1">•</span>
-                    {t("services.restore.bullet4")}
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-bn-restore mt-1">•</span>
-                    {t("services.restore.bullet5")}
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            {/* Construct Pillar */}
-            <Card className="bg-bn-glacier border-bn-construct overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="relative h-48 bg-bn-construct/10">
-                <Image
-                  src="/images/demolition-service.jpg"
-                  alt="Construct services - demolition and construction"
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-bn-construct/20"></div>
-              </div>
-              <CardHeader>
-                <div className="flex items-center gap-3 mb-2">
-                  <Wrench className="h-8 w-8 text-bn-construct" />
-                  <CardTitle className="text-xl text-bn-steel">{t("services.construct.title")}</CardTitle>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-bn-graphite mb-4">{t("services.construct.description")}</p>
-                <ul className="space-y-3 text-bn-graphite">
-                  <li className="flex items-start gap-2">
-                    <span className="text-bn-construct mt-1">•</span>
-                    {t("services.construct.bullet1")}
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-bn-construct mt-1">•</span>
-                    {t("services.construct.bullet2")}
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-bn-construct mt-1">•</span>
-                    {t("services.construct.bullet3")}
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-bn-construct mt-1">•</span>
-                    {t("services.construct.bullet4")}
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-bn-construct mt-1">•</span>
-                    {t("services.construct.bullet5")}
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <div className="lg:col-span-3 lg:flex lg:justify-center lg:gap-8">
-              <Card className="bg-card border-border overflow-hidden lg:w-80">
-              <div className="relative h-48">
-                <Image
-                  src="/disaster-recovery-cleaning-emergency-response-team.jpg"
-                  alt="Disaster recovery cleaning services"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <CardHeader>
-                <div className="flex items-center gap-3 mb-2">
-                  <Shield className="h-8 w-8 text-primary" />
-                  <CardTitle className="text-xl">{t("services.disasterRecovery.title")}</CardTitle>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-card-foreground mb-4">{t("services.disasterRecovery.description")}</p>
-                <ul className="space-y-3 text-card-foreground">
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">•</span>
-                    {t("services.disasterRecovery.bullet1")}
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">•</span>
-                    {t("services.disasterRecovery.bullet2")}
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">•</span>
-                    {t("services.disasterRecovery.bullet3")}
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">•</span>
-                    {t("services.disasterRecovery.bullet4")}
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">•</span>
-                    {t("services.disasterRecovery.bullet5")}
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
-
-              <Card className="bg-card border-border overflow-hidden lg:w-80">
-              <div className="relative h-48">
-                <Image
-                  src="/images/demolition-service.jpg"
-                  alt="Professional demolition services"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <CardHeader>
-                <div className="flex items-center gap-3 mb-2">
-                  <Wrench className="h-8 w-8 text-primary" />
-                  <CardTitle className="text-xl">{t("services.demolition.title")}</CardTitle>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-card-foreground mb-4">{t("services.demolition.description")}</p>
-                <ul className="space-y-3 text-card-foreground">
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">•</span>
-                    {t("services.demolition.bullet1")}
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">•</span>
-                    {t("services.demolition.bullet2")}
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">•</span>
-                    {t("services.demolition.bullet3")}
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">•</span>
-                    {t("services.demolition.bullet4")}
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">•</span>
-                    {t("services.demolition.bullet5")}
-                  </li>
-                </ul>
-              </CardContent>
-              </Card>
-            </div>
+        {/* Call to Action */}
+        <div className="bg-bn-primary rounded-lg p-8 text-center">
+          <h3 className="text-2xl font-bold text-bn-white mb-4">
+            Ready to Start Your Project?
+          </h3>
+          <p className="text-bn-light mb-6 max-w-2xl mx-auto">
+            Contact us today for a free consultation and quote. We're here to help bring your vision to life.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button
+              size="lg"
+              className="bg-bn-orange hover:bg-bn-orange/90 text-bn-white font-semibold px-8 py-3"
+              asChild
+            >
+              <a href="#contact">Get Free Quote</a>
+            </Button>
+            <Button
+              variant="outline"
+              size="lg"
+              className="border-bn-white text-bn-white hover:bg-bn-white hover:text-bn-primary font-semibold px-8 py-3"
+              asChild
+            >
+              <a href="tel:+15145778776">Call (514) 577-8776</a>
+            </Button>
           </div>
         </div>
       </div>

@@ -92,11 +92,11 @@ Serving Ottawa, Gatineau, and surrounding areas`
   }
 
   return (
-    <section id="contact" className="py-20 bg-bn-steel">
+    <section id="contact" className="py-20 bg-bn-primary">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-bn-white mb-4 text-balance">{t("contact.title")}</h2>
-          <p className="text-lg text-bn-glacier max-w-2xl mx-auto text-pretty">{t("contact.subtitle")}</p>
+          <p className="text-lg text-bn-white/90 max-w-2xl mx-auto text-pretty">{t("contact.subtitle")}</p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
