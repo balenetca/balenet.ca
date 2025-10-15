@@ -39,24 +39,86 @@ export const metadata: Metadata = {
 }
 
 export default function HomePage() {
+  const localBusinessStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "BaleNet Group Inc",
+    "description": "Vision becomes reality through our three pillars: Clean, Restore, Construct. Leading the future through innovation-first solutions in Ottawa, Gatineau, and surrounding areas.",
+    "url": "https://www.balenet.ca",
+    "logo": "https://www.balenet.ca/images/balenet-group-logo.png",
+    "image": "https://www.balenet.ca/images/construction-site-bg.jpg",
+    "telephone": "+1-514-577-8776",
+    "email": "info@balenet.ca",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "CA",
+      "addressRegion": "ON",
+      "addressLocality": "Ottawa"
+    },
+    "areaServed": [
+      "Ottawa", "Gatineau", "Carleton", "Hull", "Aylmer", "Orleans", 
+      "Kanata", "Nepean", "Gloucester", "Ottawa South", "Barrhaven", "Stittsville"
+    ],
+    "serviceArea": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": 45.4215,
+        "longitude": -75.6972
+      },
+      "geoRadius": "50000"
+    },
+    "openingHours": "Mo-Su 00:00-23:59",
+    "priceRange": "$$",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "127"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/balenet",
+      "https://www.facebook.com/balenetgroup"
+    ],
+    "department": [
+      {
+        "@type": "LocalBusiness",
+        "name": "Clean Services",
+        "description": "Vision becomes reality through pristine, innovation-driven spaces. Professional cleaning services including daily janitorial, deep cleaning, floor care, and post-construction cleanup.",
+        "url": "https://www.balenet.ca/clean"
+      },
+      {
+        "@type": "LocalBusiness", 
+        "name": "Restore Services",
+        "description": "Vision becomes reality through complete, technology-enhanced restoration. Emergency disaster recovery, water damage cleanup, fire restoration, and mold remediation services.",
+        "url": "https://www.balenet.ca/restore"
+      },
+      {
+        "@type": "LocalBusiness",
+        "name": "Construct Services", 
+        "description": "Vision becomes reality through innovative builds and smart solutions. Professional demolition, tenant fit-outs, renovations, and facility upgrades with cutting-edge construction methods.",
+        "url": "https://www.balenet.ca/construct"
+      }
+    ]
+  }
+
   const faqStructuredData = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "What areas does BALE•NET serve?",
+        "name": "What areas does BaleNet Group Inc serve?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "BALE•NET serves Ottawa, Gatineau, Carleton, Hull, Aylmer, Orleans, Kanata, Nepean, Gloucester, Ottawa South, Barrhaven, Stittsville, and surrounding areas in the National Capital Region."
+          "text": "BaleNet Group Inc serves Ottawa, Gatineau, Carleton, Hull, Aylmer, Orleans, Kanata, Nepean, Gloucester, Ottawa South, Barrhaven, Stittsville, and surrounding areas in the National Capital Region."
         }
       },
       {
         "@type": "Question",
-        "name": "What services does BALE•NET offer?",
+        "name": "What services does BaleNet Group Inc offer?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "BALE•NET offers comprehensive construction cleaning services including debris removal, post-construction cleanup, deep cleaning, final cleaning, demolition services, and disaster recovery cleaning."
+          "text": "BaleNet Group Inc offers comprehensive three-pillar services: Clean (janitorial, deep cleaning, floor care), Restore (disaster recovery, mold remediation, water damage), and Construct (demolition, fit-outs, renovations)."
         }
       },
       {
@@ -64,23 +126,23 @@ export default function HomePage() {
         "name": "How do I get a free quote?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "You can get a free quote by calling (514) 577-8776, emailing info@balenet.com, or filling out our online contact form. We provide detailed estimates for all construction cleaning projects."
+          "text": "You can get a free quote by calling (514) 577-8776, emailing info@balenet.ca, or filling out our online contact form. We provide detailed estimates for all Clean, Restore, and Construct projects."
         }
       },
       {
         "@type": "Question",
-        "name": "What are BALE•NET's operating hours?",
+        "name": "What are BaleNet Group Inc's operating hours?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "BALE•NET operates 7 days a week, 24 hours a day. We provide round-the-clock construction cleaning services to accommodate urgent project needs and tight deadlines."
+          "text": "BaleNet Group Inc operates 7 days a week, 24 hours a day. We provide round-the-clock Clean, Restore, and Construct services to accommodate urgent project needs and tight deadlines."
         }
       },
       {
         "@type": "Question",
-        "name": "Does BALE•NET provide quality guarantees?",
+        "name": "Does BaleNet Group Inc provide quality guarantees?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, BALE•NET provides comprehensive quality guarantees on all services. We ensure every construction site is cleaned to the highest standards with attention to detail and professional expertise."
+          "text": "Yes, BaleNet Group Inc provides comprehensive quality guarantees on all services. We ensure every project meets the highest standards with innovation-first approaches and professional expertise across Clean, Restore, and Construct services."
         }
       }
     ]
@@ -88,6 +150,10 @@ export default function HomePage() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessStructuredData) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData) }}

@@ -24,37 +24,49 @@ export function Header() {
         <div className="flex items-center gap-2 md:gap-4">
           <Image 
             src="/images/balenet-logo.png" 
-            alt="BALE•NET Logo" 
+            alt="BaleNet Group Inc Logo" 
             width={60} 
             height={60} 
             className="h-12 w-12 md:h-20 md:w-20" 
           />
-          <span className="text-xl md:text-3xl font-bold text-gray-900">BALE•NET</span>
+          <span className="text-xl md:text-3xl font-bold text-bn-steel">BaleNet Group Inc</span>
         </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-6">
           <button
             onClick={() => scrollToSection("home")}
-            className="text-gray-700 hover:text-orange-500 transition-colors font-medium"
+            className="text-bn-steel hover:text-bn-construct transition-colors font-medium"
           >
             {t("nav.home")}
           </button>
-          <button
-            onClick={() => scrollToSection("services")}
-            className="text-gray-700 hover:text-orange-500 transition-colors font-medium"
+          <a
+            href="/clean"
+            className="text-bn-steel hover:text-bn-clean transition-colors font-medium"
           >
-            {t("nav.services")}
-          </button>
+            Clean
+          </a>
+          <a
+            href="/restore"
+            className="text-bn-steel hover:text-bn-restore transition-colors font-medium"
+          >
+            Restore
+          </a>
+          <a
+            href="/construct"
+            className="text-bn-steel hover:text-bn-construct transition-colors font-medium"
+          >
+            Construct
+          </a>
           <button
             onClick={() => scrollToSection("about")}
-            className="text-gray-700 hover:text-orange-500 transition-colors font-medium"
+            className="text-bn-steel hover:text-bn-gold transition-colors font-medium"
           >
             {t("nav.about")}
           </button>
           <button
             onClick={() => scrollToSection("contact")}
-            className="text-gray-700 hover:text-orange-500 transition-colors font-medium"
+            className="text-bn-steel hover:text-bn-construct transition-colors font-medium"
           >
             {t("nav.contact")}
           </button>
@@ -83,7 +95,7 @@ export function Header() {
 
           <Button
             onClick={() => scrollToSection("contact")}
-            className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold px-4 py-2"
+            className="bg-bn-construct text-bn-white hover:bg-bn-construct/90 font-semibold px-4 py-2"
           >
             {t("nav.getQuote")}
           </Button>
@@ -121,43 +133,55 @@ export function Header() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
-      {isMobileMenuOpen && (
-        <div className="md:hidden bg-white border-t border-gray-200">
-          <nav className="container mx-auto px-4 py-4 flex flex-col gap-4">
-            <button
-              onClick={() => scrollToSection("home")}
-              className="text-gray-700 hover:text-orange-500 transition-colors font-medium text-left py-2"
-            >
-              {t("nav.home")}
-            </button>
-            <button
-              onClick={() => scrollToSection("services")}
-              className="text-gray-700 hover:text-orange-500 transition-colors font-medium text-left py-2"
-            >
-              {t("nav.services")}
-            </button>
-            <button
-              onClick={() => scrollToSection("about")}
-              className="text-gray-700 hover:text-orange-500 transition-colors font-medium text-left py-2"
-            >
-              {t("nav.about")}
-            </button>
-            <button
-              onClick={() => scrollToSection("contact")}
-              className="text-gray-700 hover:text-orange-500 transition-colors font-medium text-left py-2"
-            >
-              {t("nav.contact")}
-            </button>
-            <Button
-              onClick={() => scrollToSection("contact")}
-              className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold px-4 py-2 mt-2"
-            >
-              {t("nav.getQuote")}
-            </Button>
-          </nav>
-        </div>
-      )}
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden bg-white border-t border-gray-200">
+            <nav className="container mx-auto px-4 py-4 flex flex-col gap-4">
+              <button
+                onClick={() => scrollToSection("home")}
+                className="text-bn-steel hover:text-bn-construct transition-colors font-medium text-left py-2"
+              >
+                {t("nav.home")}
+              </button>
+              <a
+                href="/clean"
+                className="text-bn-steel hover:text-bn-clean transition-colors font-medium text-left py-2"
+              >
+                Clean
+              </a>
+              <a
+                href="/restore"
+                className="text-bn-steel hover:text-bn-restore transition-colors font-medium text-left py-2"
+              >
+                Restore
+              </a>
+              <a
+                href="/construct"
+                className="text-bn-steel hover:text-bn-construct transition-colors font-medium text-left py-2"
+              >
+                Construct
+              </a>
+              <button
+                onClick={() => scrollToSection("about")}
+                className="text-bn-steel hover:text-bn-gold transition-colors font-medium text-left py-2"
+              >
+                {t("nav.about")}
+              </button>
+              <button
+                onClick={() => scrollToSection("contact")}
+                className="text-bn-steel hover:text-bn-construct transition-colors font-medium text-left py-2"
+              >
+                {t("nav.contact")}
+              </button>
+              <Button
+                onClick={() => scrollToSection("contact")}
+                className="bg-bn-construct text-bn-white hover:bg-bn-construct/90 font-semibold px-4 py-2 mt-2"
+              >
+                {t("nav.getQuote")}
+              </Button>
+            </nav>
+          </div>
+        )}
     </header>
   )
 }
